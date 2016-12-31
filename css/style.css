@@ -1,0 +1,273 @@
+body {
+    position: relative;
+}
+
+#section1 {color: white; background-color: #e53f0e; margin-bottom: -10px; font-weight: 300;}
+#section2 {color: #fff; background-color: #407db7; margin-bottom: -10px; font-weight: 300;}
+#section3 {color: #fff; background-color: #3a7c37; margin-bottom: -10px; font-weight: 300;}
+#section4 {color: #fff; background-color: #6043bc; margin-bottom: -10px; font-weight: 300;}
+#section2B {color: #fff; background-color: #cc3333; margin-bottom: -10px; font-weight: 300;}
+
+/*
+Previous Colors
+
+#e53f0e
+
+#407db7
+
+#3a7c37
+
+#cc3333
+
+
+
+*/
+
+.pagination1{
+    font-weight: 300;
+}
+.pagination2{
+    font-weight: 300;
+}
+.pagination3{
+    font-weight: 300;
+}
+.pagination4{
+    font-weight: 300;
+}
+.pagination5{
+    font-weight: 300;
+}
+.pagination6{
+    font-weight: 300;
+}
+.pagination7{
+    font-weight: 300;
+}
+.pagination8{
+    font-weight: 300;
+}
+#searchField h3{
+    font-weight: 300;
+}
+
+.section {
+    color: white;
+}
+.panel-heading {
+    padding: 3em;
+}
+.panel-heading a {
+    color: white;
+    text-decoration: none;
+}
+.panel-heading h1 {
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+}
+.panel-heading a:hover {
+    text-decoration: none;
+}
+.panel-collapse {
+    padding: 0 1em 1em 1em;
+}
+a:hover {
+    text-decoration: none !important;
+}
+h3:hover{
+    text-decoration: none !important;
+}
+a {
+    text-decoration: none !important;
+}
+
+
+#loginPage {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 20px;
+    background-color: #48515b;
+    color:white;
+    font-weight: 300;
+    width: 300px;
+}
+
+input[type='search'] {
+    height: 30px;
+    margin: 10px 10px 0 0;
+    padding-left: 5px;
+    background: #e53f0e;
+    border: 1px solid white;
+    color: white;
+    width: 200px;
+    border-radius: 5px;
+}
+input[type='email'] {
+    margin-bottom: 10px;
+    width: 100%;
+    color: #333;
+    border-radius: 5px;
+}
+input[type='password'] {
+    margin-bottom: 10px;
+    width: 100%;
+    color: #333;
+    border-radius: 5px;
+}
+
+input[type='email']:focus {
+    border-color: #407db7;
+}
+input[type='password']:focus {
+    border-color: #407db7;
+}
+select {
+    height: 30px;
+    width: 200px;
+    margin: 10px 0 0 0;
+    color: white;
+    background: #e53f0e;
+    border: 1px solid white;
+}
+
+input[type='search']::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #ccc;
+}
+input[type='search']:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    white;
+    opacity:  1;
+}
+input[type='search']::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    white;
+    opacity:  1;
+}
+input[type='search']:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    white;
+}
+
+.teamPanel {
+    background: #CE380C;
+    color: white;
+
+}
+#loginHeader{
+    font-weight: 300;
+}
+#itemsTeam{
+    font-weight: 300;
+}
+.panel-title{
+    font-weight: 300;
+    text-align: center;
+}
+#tableHeading{
+    font-weight: 300;
+}
+.table thead tr th{
+    font-weight: 300;
+}
+
+body {
+    background-color: #48515b;
+}
+header {
+    background-color: #48515b;
+    padding: 2em;
+}
+header h1 {
+    color: white;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+header .logOutButton {
+    text-align: right;
+}
+header .logOutButton a {
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid white;
+    background-color: #48515b;
+    border-radius: 5px;
+}
+header .logOutButton a:hover {
+    background-color: #407db7;
+}
+header .logOutButton {
+    font-weight: 300;
+}
+.teamPanel {
+    background: #e53f0e;
+    color: white;
+    border: 1px solid white;
+    margin-bottom: -10px;
+}
+.teamPanel h4 {
+    color: white;
+}
+.teamPanelHeading {
+    padding: 1em;
+    font-weight: 300;
+}
+.sponsorPanel {
+    background: #6043bc;
+    color: white;
+    border: 1px solid white;
+    margin-bottom: -10px;
+}
+.sponsorPanel h4 {
+    color: white;
+}
+.sponsorPanelHeading {
+    padding: 1em;
+    font-weight: 300;
+}
+.pagination {
+    background-color: #e53f0e;
+    border: 1px solid white;
+    margin-bottom: 0;
+    padding: .2em .5em;
+    color: white;
+}
+.pagination:hover {
+    background: white;
+    color: black;
+    border: 1px solid white;
+}
+.centerElement {
+    text-align: center;
+}
+.enquireItem {
+    background: #e53f0e;
+    border: 1px solid white;
+    padding: 1px 5px;
+}
+#sponsorshipLevels{
+    text-align: center;
+    font-weight: 300;
+}
+
+.requestListButton {
+    background-color: #cc3333;
+    color: white;
+    border: 1px solid white;
+    padding: 1px 5px;
+}
+
+.purchaseButton {
+    color: white;
+}
+.purchaseButton:hover {
+    cursor: pointer;
+    color: black;
+}
+.addBOMButton {
+    background-color: #407db7;
+    color: white;
+    font-weight: 300;
+}
+.addBOMButton:hover {
+    background-color: #EEE;
+    color: black;
+}
