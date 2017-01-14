@@ -2,4 +2,7 @@
     "require": {
         "ext-mysql": "*"
     }
+    "require": {
+        "sendgrid/sendgrid": "~5.1"
+    }
 }
