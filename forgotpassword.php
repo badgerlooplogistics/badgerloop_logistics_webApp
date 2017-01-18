@@ -26,46 +26,28 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $query = "UPDATE users SET secret_code = '{$randomString}' WHERE id={$userId}";
     mysqli_query($conn, $query);
 
-    //$to = "gwozdz@wisc.edu"; // TESTING
-    //$subject = "Forgot password Badgerloop Logistics";
-    //$txt = "Please click the following link to change your password: ".$link;
-    //$headers = "From: info@badgerloop.com";
+    $to = "gwozdz@wisc.edu"; // TESTING
+    $subject = "Forgot password Badgerloop Logistics";
+    $txt = "Please click the following link to change your password: ".$link;
+    $headers = "From: info@badgerloop.com";
 
  
-    //mail($to,$subject,$txt,$headers);
+    mail($to,$subject,$txt,$headers);
     
-$request_body = json_decode('{
-  "personalizations": [
-    {
-      "to": [
-        {
-          "email": "gwozdz@wisc.edu"
-        }
-      ],
-      "subject": "Hello World from the SendGrid PHP Library!"
-    }
-  ],
-  "from": {
-    "email": "gwozdz@wisc.edu"
-  },
-  "content": [
-    {
-      "type": "text/plain",
-      "value": "Hello, Email!"
-    }
-  ]
-}');
+    
+    //testing
+    
+    $sendgrid = new SendGrid(_aHQwNYpRp6zF2P1SYMRTA);
+    $email = new SendGrid\Email();
 
-$apiKey = getenv(_aHQwNYpRp6zF2P1SYMRTA);
-$sg = new \SendGrid($apiKey);
+    $email->addTo("gwozdz@wisc.edu")
+          ->setFrom("gwozdz@wisc.edu")
+          ->setSubject("Sending with SendGrid is Fun")
+          ->setHtml("and easy to do anywhere, even with PHP");
 
-$response = $sg->client->mail()->send()->post($request_body);
-echo $response->statusCode();
-echo $response->body();
-echo $response->headers();
-    
-    
+    $sendgrid->send($email);
 }
+
 ?>
 <!doctype html>
 <html>
