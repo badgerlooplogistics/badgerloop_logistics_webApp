@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once("../database.php");
-include "configure.php";
+include 'configure.php';
 
 $id = $_POST['id'];
 $mess = $_POST['mess'];
