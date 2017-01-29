@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once("../database.php");
+include "configure.php";
 
 $id = $_POST['id'];
 $mess = $_POST['mess'];
@@ -31,11 +32,12 @@ $tdName = $td['name'];
 
 
 
-$to = "gwozdz@wisc.edu";
-$subject = "Purchase Order Request #".$id." denied";
-$txt = $personName.",\n\n   Unfortunately, your request cannot be approved for the following reasons: \n\n      ".$mess."\n\n\n -".$tdName.", Badgerloop Technical Director";
-$headers = "From: ".$emailTD;
+//$to = "gwozdz@wisc.edu";
+//$subject = "Purchase Order Request #".$id." denied";
+//$txt = $personName.",\n\n   Unfortunately, your request cannot be approved for the following reasons: \n\n      ".$mess."\n\n\n -".$tdName.", Badgerloop Technical Director";
+//$headers = "From: ".$emailTD;
 
+$chat = $slack->chat('@gwozdz');
+$chat->send(".$mess.");
 
-mail($to,$subject,$txt,$headers);
 ?>

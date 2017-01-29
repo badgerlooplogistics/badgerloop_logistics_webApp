@@ -6,9 +6,48 @@ namespace Composer\Autoload;
 
 class ComposerStaticInite01ff064c9d717197d22ac128d3218bc
 {
+    public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'ThreadMeUp\\Slack\\' => 17,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Component\\EventDispatcher\\' => 34,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'ThreadMeUp\\Slack\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/threadmeup/slack-sdk/src',
+        ),
+        'Symfony\\Component\\EventDispatcher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'G' => 
+        array (
+            'Guzzle\\Tests' => 
+            array (
+                0 => __DIR__ . '/..' . '/guzzle/guzzle/tests',
+            ),
+            'Guzzle' => 
+            array (
+                0 => __DIR__ . '/..' . '/guzzle/guzzle/src',
+            ),
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInite01ff064c9d717197d22ac128d3218bc::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInite01ff064c9d717197d22ac128d3218bc::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInite01ff064c9d717197d22ac128d3218bc::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

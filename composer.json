@@ -1,6 +1,7 @@
 {
     "require": {
-        "ext-mysql": "*"
+        "ext-mysql": "*",
+        "threadmeup/slack-sdk": "dev-master"
     }
     
 }
