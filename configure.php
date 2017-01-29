@@ -5,7 +5,7 @@ include 'vendor/autoload.php';
 use ThreadMeUp\Slack\Client;
 
 $config = [
-    'token' => 'xoxp-133915446628-133979134660-133980674036-b066a8fdbd397e915ae15f5009a266f5',
+    'token' => 'xoxp-133915446628-133979134660-134594356134-c84c3082ca7bf5b57002153dec760a41',
     'team' => 'new',
     'username' => 'gwozdz',
     'icon' => 'ICON', // Auto detects if it's an icon_url or icon_emoji
