@@ -38,6 +38,6 @@ $tdName = $td['name'];
 //$headers = "From: ".$emailTD;
 
 $chat = $slack->chat('@gwozdz');
-$chat->send(".$mess.");
+$chat->send('Test');
 
 ?>

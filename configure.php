@@ -14,8 +14,4 @@ $config = [
 
 $slack = new Client($config);
 
-
-
-
-
 ?>
