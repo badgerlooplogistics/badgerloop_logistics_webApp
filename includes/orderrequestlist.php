@@ -11,7 +11,6 @@
                 $query = "SELECT * FROM financial_package WHERE status = 0 ORDER BY shipping_priority ASC";
                 $result = mysqli_query($conn, $query);
                 if (mysqli_num_rows($result) > 0) {
-
                  echo "<div class='table-responsive'>
                         <table class='table'>
                             <thead>
@@ -25,6 +24,7 @@
                                 </tr>
                             </thead>
                             <tbody>";
+                    
                     while($request = mysqli_fetch_assoc($result)) {
                         switch($request['shipping_priority']) {
                             case 1:
@@ -45,7 +45,7 @@
                         echo "<tr id='requestListTr".$request['id']."'>
                                 <td>".$request['item']."</td>
                                 <td>".date_format(date_create($request['date_added']), 'm/d/Y')."</td>
-                                <td>".$request['id']."</td>
+                                <td>".$request['user_name']."</td>
                                 <td>".$priority."</td>
                                 <td style='text-align: center;'><button id='".$request['id']."' class='btn requestListButton requestListButtonApprove'><span class='glyphicon glyphicon-ok'></span></button> <button id='".$request['id']."' class='btn requestListButton requestListButtonReject'><span class='glyphicon glyphicon-remove'></span></button></td>
                                 <td style='text-align: center;'><button class=\"btn requestListButton\" data-toggle=\"modal\" data-target=\"#myModal".$request['id']."\"><span class='glyphicon glyphicon-search'></span></button></td>
