@@ -22,7 +22,7 @@
             } else {
                 // check password
                 $person = mysqli_fetch_assoc($result);
-                if (md5($password) == $person['password']) {
+                if ($password == $person['password']) {
                     $_SESSION['login'] = true;
                     $_SESSION['user'] = $person['id']; // store user id in session
                     $_SESSION['access'] = $person['access'];
@@ -60,7 +60,7 @@
             <h1 id="loginHeader">Badgerloop Logistics Login</h1>
                 <input id="loginHeader" type="email" placeholder=" Email" name="email" required autofocus><br>
                 <input id="loginHeader" type="password" placeholder=" Password" name="password" required><br>
-                <input id="loginHeader" type="submit" class="btn btn-primary" value="Login"> <a class="btn btn-primary" href='forgotpassword.php' style="font-weight: 300;">Forgot password</a>
+                <input id="loginHeader" type="submit" class="btn btn-primary" value="Login"> 
     </form><br />
     </div>
     <footer>
