@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: basvanandel
- * Date: 10/20/16
- * Time: 5:15 PM
- */
 
     session_start();
     require_once("includes/database.php");
