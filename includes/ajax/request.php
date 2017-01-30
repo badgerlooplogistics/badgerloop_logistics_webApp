@@ -20,16 +20,17 @@ $userId = mysqli_real_escape_string($conn, $_POST['user']);
 $link = mysqli_real_escape_string($conn, $_POST['link']);
 $location = mysqli_real_escape_string($conn, $_POST['location']);
 
-$query = "SELECT team_id FROM users WHERE id=".$userId;
+$query = "SELECT * FROM users WHERE id=".$userId;
 $result = mysqli_query($conn, $query);
 $user = mysqli_fetch_assoc($result);
 $teamId = $user['team_id'];
+$userName = $user['name'];
 
 
 $dateAdded = date('Y-m-d', time());
 
-$query = "INSERT INTO financial_package (item, system, item_disc, date_added, bom_supplier, est_quantity, est_individual_cost, shipping_priority, user_id, team, status, link, shipping_location)
-          VALUES ('".$item."','".$system."', '".$desc."', '".$dateAdded."', '".$supplier."', ".$quantity.", ".$cost.", ".$priority.", ".$userId.", ".$teamId.", 0, '".$link."', ".$location.")";
+$query = "INSERT INTO financial_package (item, system, item_disc, date_added, bom_supplier, est_quantity, est_individual_cost, shipping_priority, user_id, user_name, team, status, link, shipping_location)
+          VALUES ('".$item."','".$system."', '".$desc."', '".$dateAdded."', '".$supplier."', ".$quantity.", ".$cost.", ".$priority.", ".$userId.",".$userName.", ".$teamId.", 0, '".$link."', ".$location.")";
 mysqli_query($conn, $query);
 
 if (mysqli_affected_rows($conn) > 0) {
