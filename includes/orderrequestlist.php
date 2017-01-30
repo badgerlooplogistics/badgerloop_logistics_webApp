@@ -57,6 +57,7 @@
                                             </div>
                                             <div class=\"modal-body\">
                                                 <p style='color:black;'>
+                                                    Requested By: ".$request['user_id']."<br />
                                                     Item: ".$request['item']."<br />
                                                     System: ".$request['system']."<br />
                                                     Item Description: ".$request['item_disc']."<br />
