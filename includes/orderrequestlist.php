@@ -41,13 +41,11 @@
                         } else {
                             $shippingLocation = "Chamberlin";
                         }
-                        $userQuery = "SELECT name FROM users WHERE id = $request['user_id']";
-                        $userResult = mysqli_query($conn, $userQuery);
-                        $requestedBy = mysqli_fetch_assoc($userResult);
+                        
                         echo "<tr id='requestListTr".$request['id']."'>
                                 <td>".$request['item']."</td>
                                 <td>".date_format(date_create($request['date_added']), 'm/d/Y')."</td>
-                                <td>".$requestedBy['name']."</td>
+                                <td>".$request['id']."</td>
                                 <td>".$priority."</td>
                                 <td style='text-align: center;'><button id='".$request['id']."' class='btn requestListButton requestListButtonApprove'><span class='glyphicon glyphicon-ok'></span></button> <button id='".$request['id']."' class='btn requestListButton requestListButtonReject'><span class='glyphicon glyphicon-remove'></span></button></td>
                                 <td style='text-align: center;'><button class=\"btn requestListButton\" data-toggle=\"modal\" data-target=\"#myModal".$request['id']."\"><span class='glyphicon glyphicon-search'></span></button></td>
