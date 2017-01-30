@@ -24,11 +24,11 @@ $query = "SELECT * FROM users WHERE id=".$userId;
 $result = mysqli_query($conn, $query);
 $user = mysqli_fetch_assoc($result);
 $teamId = $user['team_id'];
-
+$username = $user['name'];
 $dateAdded = date('Y-m-d', time());
 
 $query = "INSERT INTO financial_package (item, system, item_disc, date_added, bom_supplier, est_quantity, est_individual_cost, shipping_priority, user_id, user_name, team, status, link, shipping_location)
-          VALUES ('".$item."','".$system."', '".$desc."', '".$dateAdded."', '".$supplier."', ".$quantity.", ".$cost.", ".$priority.", ".$userId.", ".$user['name'].", ".$teamId.", 0, '".$link."', ".$location.")";
+          VALUES ('".$item."','".$system."', '".$desc."', '".$dateAdded."', '".$supplier."', ".$quantity.", ".$cost.", ".$priority.", ".$userId.", ".$username.", ".$teamId.", 0, '".$link."', ".$location.")";
 mysqli_query($conn, $query);
 
 if (mysqli_affected_rows($conn) > 0) {
