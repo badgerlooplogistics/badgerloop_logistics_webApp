@@ -18,6 +18,7 @@
                                 <tr>
                                     <th>Item</th>
                                     <th>Date</th>
+                                    <th>Requested By</th>
                                     <th>Shipping Priority</th>
                                     <th style='text-align: center;'>Actions</th>
                                     <th style='text-align: center;'>More</th>
@@ -43,6 +44,7 @@
                         echo "<tr id='requestListTr".$request['id']."'>
                                 <td>".$request['item']."</td>
                                 <td>".date_format(date_create($request['date_added']), 'm/d/Y')."</td>
+                                <td>".$request['user_id']."</td>
                                 <td>".$priority."</td>
                                 <td style='text-align: center;'><button id='".$request['id']."' class='btn requestListButton requestListButtonApprove'><span class='glyphicon glyphicon-ok'></span></button> <button id='".$request['id']."' class='btn requestListButton requestListButtonReject'><span class='glyphicon glyphicon-remove'></span></button></td>
                                 <td style='text-align: center;'><button class=\"btn requestListButton\" data-toggle=\"modal\" data-target=\"#myModal".$request['id']."\"><span class='glyphicon glyphicon-search'></span></button></td>
