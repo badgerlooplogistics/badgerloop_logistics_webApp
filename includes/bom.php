@@ -96,6 +96,7 @@
                                                                 <div class=\"modal-body\">
                                                                     <p style='color:black;'>
                                                                         Item: ".$item['item']."<br />
+                                                                        Requested By: ".$item['user_id']."<br />
                                                                         System: ".$item['system']."<br />
                                                                         Item Description: ".$item['item_disc']."<br />
                                                                         Date Added: ".date_format(date_create($item['date_added']), 'm/d/Y')."<br />
