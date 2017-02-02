@@ -273,6 +273,7 @@
         var cost = $("#requestFormCost").val();
         var priority = $("#requestFormPriority").val();
         var user = $("#requestFormUser").val();
+        var userName = $("#requestFormUserName").val()
         var link = $("#requestFormLink").val();
         var location = $("#requestFormLocation").val();
 
@@ -288,7 +289,7 @@
             }
             $("#failureMessagePOR").show("fade");
         } else {
-            var dataString = "item=" + item + "&system=" + system + "&desc=" + desc + "&supplier=" + supplier + "&quantity=" + quantity + "&cost=" + cost + "&priority=" + priority + "&user=" + user + "&link=" + link + "&location=" + location;
+            var dataString = "item=" + item + "&system=" + system + "&desc=" + desc + "&supplier=" + supplier + "&quantity=" + quantity + "&cost=" + cost + "&priority=" + priority + "&user=" + user  + "&link=" + link + "&location=" + location + "&userName=" + userName;
             $("#failureMessagePOR").hide("fade");
             $("#requestFormItem").css("border","none");
             $("#requestFormQuantity").css("border","none");
