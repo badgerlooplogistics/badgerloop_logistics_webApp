@@ -29,8 +29,8 @@ $teamId = $user['team_id'];
 
 $dateAdded = date('Y-m-d', time());
 
-$query = "INSERT INTO financial_package (item, system, item_disc, date_added, bom_supplier, est_quantity, est_individual_cost, shipping_priority, user_id,  team, user_name, status, link, shipping_location)
-          VALUES ('".$item."','".$system."', '".$desc."', '".$dateAdded."', '".$supplier."', ".$quantity.", ".$cost.", ".$priority.", ".$userId.", ".$teamId.", ".$userName.", 0, '".$link."', ".$location.")";
+$query = "INSERT INTO financial_package (item, system, item_disc, date_added, bom_supplier, est_quantity, est_individual_cost, shipping_priority, user_id,  team, status, link, shipping_location, user_name)
+          VALUES ('".$item."','".$system."', '".$desc."', '".$dateAdded."', '".$supplier."', ".$quantity.", ".$cost.", ".$priority.", ".$userId.", ".$teamId.", 0, '".$link."', ".$location.", ".$userName.")";
 mysqli_query($conn, $query);
 
 if (mysqli_affected_rows($conn) > 0) {
