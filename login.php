@@ -25,6 +25,7 @@
                 if ($password == $person['password']) {
                     $_SESSION['login'] = true;
                     $_SESSION['user'] = $person['id']; // store user id in session
+                    $_SESSION['userName'] = $person['name']; // store user name in session
                     $_SESSION['access'] = $person['access'];
                     header("Location: index.php");
                 } else {
