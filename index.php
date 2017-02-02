@@ -263,54 +263,7 @@
         });
 
     });
-        $(".pagination9").click(function () {
-        var page = $(this).html() - 1;
-        var dataString = "team=9&page=" + page;
-        //alert(dataString);
-        $.ajax({
-            type: "POST",
-            url: "includes/items.php",
-            data: dataString,
-            success: function (data) {
-                //alert(data);
-                $("#itemsTeam9").html(data);
-            },
-            error: function (data) {
-                alert("error");
-            }
-        });
-        $(".pagination10").click(function () {
-        var page = $(this).html() - 1;
-        var dataString = "team=10&page=" + page;
-        //alert(dataString);
-        $.ajax({
-            type: "POST",
-            url: "includes/items.php",
-            data: dataString,
-            success: function (data) {
-                //alert(data);
-                $("#itemsTeam10").html(data);
-            },
-            error: function (data) {
-                alert("error");
-            }
-        });
-        $(".pagination11").click(function () {
-        var page = $(this).html() - 1;
-        var dataString = "team=11&page=" + page;
-        //alert(dataString);
-        $.ajax({
-            type: "POST",
-            url: "includes/items.php",
-            data: dataString,
-            success: function (data) {
-                //alert(data);
-                $("#itemsTeam11").html(data);
-            },
-            error: function (data) {
-                alert("error");
-            }
-        });
+
 
     $("#requestFormSubmit").click(function() {
         var item = $("#requestFormItem").val();
