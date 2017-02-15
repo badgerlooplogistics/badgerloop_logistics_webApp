@@ -33,7 +33,7 @@
                             case 2:
                                 $priority = "2-3 Business Days";
                                 break;
-                            case 3:
+                            case 5:
                                 $priority = "Amazon Prime";
                                 break;
                             default:
