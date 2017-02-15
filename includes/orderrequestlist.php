@@ -34,7 +34,7 @@
                                 $priority = "2-3 Business Days";
                                 break;
                             case 3:
-                                $priority = "Test";
+                                $priority = "Amazon Prime";
                                 break;
                             default:
                                 $priority = "3-5 Business Days";
