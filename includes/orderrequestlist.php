@@ -48,6 +48,7 @@
                             $shippingLocation = "Chamberlin";
                         }
                         
+                        {
                         if ($request['system'] == 1) {
                             $system = "Administration";
                         }
@@ -85,6 +86,7 @@
                             $system = "Suspension and Stability";
                         } else {
                             $system = "Virtual Reality";
+                        }
                         }
                     
                         echo "<tr id='requestListTr".$request['id']."'>
