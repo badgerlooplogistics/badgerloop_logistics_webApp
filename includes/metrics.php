@@ -15,7 +15,6 @@
                             <th>Expenses to date</th>
                             <th>BOM budget</th>
                             <th>Available funds</th>
-                            <th>Test</th>
                         </tr>
                     </thead>
                     <tbody>
