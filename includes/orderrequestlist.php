@@ -87,6 +87,7 @@
                         } else {
                             $system = "Virtual Reality";
                         }
+                        }
                     
                         echo "<tr id='requestListTr".$request['id']."'>
                                 <td>".$request['item']."</td>
