@@ -41,6 +41,9 @@
                         }
                         if ($request['shipping_location'] == 0) {
                             $shippingLocation = "EEHQ";
+                        }
+                        if ($request['shipping_location'] == 1) {
+                            $shippingLocation = "MEHQ";
                         } else {
                             $shippingLocation = "Chamberlin";
                         }
