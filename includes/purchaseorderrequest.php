@@ -40,7 +40,7 @@
                     </div>
                     <div class="col-xs-12 col-md-3">
                         <select id="requestFormSystem" class="form-control" placeholder="System">
-                            <option value="0">- Choose Location -</option>
+                            <option value="0">- Choose System -</option>
                             <option value="1">Administration</option>
                             <option value="2">Batteries</option>
                             <option value="3">Braking</option>

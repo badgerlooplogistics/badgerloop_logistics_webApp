@@ -37,7 +37,7 @@ $tdName = $td['name'];
 //$txt = $personName.",\n\n   Unfortunately, your request cannot be approved for the following reasons: \n\n      ".$mess."\n\n\n -".$tdName.", Badgerloop Technical Director";
 //$headers = "From: ".$emailTD;
 
-$chat = $slack->chat('@gwozdz');
+$chat = $slack->chat('@kkfisher3');
 $chat->send('Test');
 
 ?>
