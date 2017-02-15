@@ -47,6 +47,45 @@
                         } else {
                             $shippingLocation = "Chamberlin";
                         }
+                        
+                        if ($request['system'] == 1) {
+                            $system = "Administration";
+                        }
+                        if ($request['system'] == 2) {
+                            $system = "Batteries";
+                        }
+                        if ($request['system'] == 3) {
+                            $system = "Braking";
+                        }
+                        if ($request['system'] == 4) {
+                            $system = "Composites";
+                        }
+                        if ($request['system'] == 5) {
+                            $system = "Controls";
+                        }
+                        if ($request['system'] == 6) {
+                            $system = "Electronics";
+                        }
+                        if ($request['system'] == 7) {
+                            $system = "Fabrication";
+                        }
+                        if ($request['system'] == 8) {
+                            $system = "Propulsion";
+                        }
+                        if ($request['system'] == 9) {
+                            $system = "Software";
+                        }
+                        if ($request['system'] == 10) {
+                            $system = "Structural Analysis";
+                        }
+                        if ($request['system'] == 11) {
+                            $system = "Structural Design";
+                        }
+                        if ($request['system'] == 12) {
+                            $system = "Suspension and Stability";
+                        } else {
+                            $system = "Virtual Reality";
+                        }
                     
                         echo "<tr id='requestListTr".$request['id']."'>
                                 <td>".$request['item']."</td>
