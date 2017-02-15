@@ -25,22 +25,72 @@
                     <tbody>
                     <?php
 
-                    while ($item = mysqli_fetch_assoc($result)) {
-                        switch ($item['shipping_priority']) {
+                    while($request = mysqli_fetch_assoc($result)) {
+                        switch($request['shipping_priority']) {
                             case 1:
                                 $priority = "Overnight";
                                 break;
                             case 2:
                                 $priority = "2-3 Business Days";
                                 break;
+                            case 5:
+                                $priority = "Amazon Prime";
+                                break;
                             default:
                                 $priority = "3-5 Business Days";
                         }
                         if ($item['shipping_location'] == 0) {
                             $shippingLocation = "EEHQ";
-                        } else {
+                        } 
+                        if ($item['shipping_location'] == 1) {
+                            $shippingLocation = "MEHQ";
+                        
+                        }else {
                             $shippingLocation = "Chamberlin";
                         }
+                        
+                        {
+                        if ($request['system'] == 1) {
+                            $system = "Administration";
+                        }
+                        if ($request['system'] == 2) {
+                            $system = "Batteries";
+                        }
+                        if ($request['system'] == 3) {
+                            $system = "Braking";
+                        }
+                        if ($request['system'] == 4) {
+                            $system = "Composites";
+                        }
+                        if ($request['system'] == 5) {
+                            $system = "Controls";
+                        }
+                        if ($request['system'] == 6) {
+                            $system = "Electronics";
+                        }
+                        if ($request['system'] == 7) {
+                            $system = "Fabrication";
+                        }
+                        if ($request['system'] == 8) {
+                            $system = "Propulsion";
+                        }
+                        if ($request['system'] == 9) {
+                            $system = "Software";
+                        }
+                        if ($request['system'] == 10) {
+                            $system = "Structural Analysis";
+                        }
+                        if ($request['system'] == 11) {
+                            $system = "Structural Design";
+                        }
+                        if ($request['system'] == 12) {
+                            $system = "Suspension and Stability";
+                        } else {
+                            $system = "Virtual Reality";
+                        }
+                        }
+                        
+                        
                         $id = $item['id'];
                         echo "<tr id='approvedOrderTr".$id."'>
                                 <td>" . $item['item'] . "</td>
@@ -59,7 +109,7 @@
                                             <div class=\"modal-body\">
                                                 <p style='color:black;'>
                                                     Item: " . $item['item'] . "<br />
-                                                    System: " . $item['system'] . "<br />
+                                                    System: " . $system . "<br />
                                                     Item Description: " . $item['item_disc'] . "<br />
                                                     Date Added: " . date_format(date_create($item['date_added']), 'm/d/Y') . "<br />
                                                     BOM Supplier: <a href='" . $item['link'] . "' target='_blank'>" . $item['bom_supplier'] . "</a><br />
