@@ -16,7 +16,6 @@
                             <thead>
                                 <tr>
                                     <th>Item</th>
-                                    <th>Test A</th>
                                     <th>Date</th>
                                     <th>Requested By</th>
                                     <th>Shipping Priority</th>
