@@ -39,7 +39,7 @@
                             default:
                                 $priority = "3-5 Business Days";
                         }
-                        }
+
                         if ($item['shipping_location'] == 0) {
                             $shippingLocation = "EEHQ";
                         } 
@@ -49,7 +49,7 @@
                         } else {
                             $shippingLocation = "Chamberlin";
                         }
-                        }
+                        
                         if ($request['system'] == 1) {
                             $system = "Administration";
                         }
@@ -87,7 +87,6 @@
                             $system = "Suspension and Stability";
                         } else {
                             $system = "Virtual Reality";
-                        }
                         }
                         
                         
