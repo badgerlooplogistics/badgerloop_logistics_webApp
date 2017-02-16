@@ -138,7 +138,7 @@
                     }
                     ?>
                     </tbody>
-                </table>
+                    </table>
                     </div>
                 <?php
             } else {
