@@ -88,7 +88,6 @@
                         } else {
                             $system = "Virtual Reality";
                         }
-                        }
                         
                         
                         $id = $item['id'];
