@@ -11,8 +11,8 @@
             $query = "SELECT * FROM financial_package WHERE status=1 ORDER BY shipping_priority ASC";
             $result = mysqli_query($conn, $query);
             if (mysqli_num_rows($result) > 0) {
-                /*?>*/
-               echo "<div class='table-responsive'>
+                ?>
+               <div class='table-responsive'>
                 <table class='table'>
                     <thead>
                     <tr>
@@ -22,8 +22,8 @@
                         <th style='text-align:center;'>Purchase</th>
                     </tr>
                     </thead>
-                    <tbody>";
-                   /* <?php*/
+                    <tbody>
+                   <?php
 
                     while($request = mysqli_fetch_assoc($result)) {
                         switch($request['shipping_priority']) {
@@ -137,11 +137,11 @@
                                     </div>
                                 </div>";
             }
-                    /* ?> */
-                   echo "</tbody>
+                    ?>
+                   </tbody>
                     </table>
-                    </div>";
-                /* <?php */
+                    </div>
+                <?php
             } else {   echo "<p style='text-align: center;'><i>No approved orders at this time.</i></p>";   }
             ?>
         </div>
