@@ -135,15 +135,13 @@
 
                                     </div>
                                 </div>";
-                    }
+                    
                     ?>
                     </tbody>
                     </table>
                     </div>
                 <?php
-            } else {
-                echo "<p style='text-align: center;'><i>No approved orders at this time.</i></p>";
-            }
+            } else {   echo "<p style='text-align: center;'><i>No approved orders at this time.</i></p>";   }
             ?>
         </div>
     </div>
