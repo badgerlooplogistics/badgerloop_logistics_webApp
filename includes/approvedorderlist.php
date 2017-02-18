@@ -136,7 +136,6 @@
 
                                     </div>
                                 </div>";
-            }
                     ?>
                    </tbody>
                     </table>
