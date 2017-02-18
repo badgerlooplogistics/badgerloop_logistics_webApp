@@ -7,12 +7,12 @@
         </div></a>
     <div id="collapse2" class="panel-collapse collapse">
         <div class="panel-body">
-            <?php
+          <?php
             $query = "SELECT * FROM financial_package WHERE status=1 ORDER BY shipping_priority ASC";
             $result = mysqli_query($conn, $query);
             if (mysqli_num_rows($result) > 0) {
-                ?>
-                <div class='table-responsive'>
+                /*?>*/
+               echo "<div class='table-responsive'>
                 <table class="table">
                     <thead>
                     <tr>
@@ -22,8 +22,8 @@
                         <th style="text-align:center;">Purchase</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <?php
+                    <tbody>";
+                   /* <?php*/
 
                     while($request = mysqli_fetch_assoc($result)) {
                         switch($request['shipping_priority']) {
@@ -87,7 +87,8 @@
                         } else {
                             $system = "Virtual Reality";
                         }
-                        }
+                        } // end of while loop
+                        
                         
                         
                         $id = $item['id'];
@@ -135,12 +136,12 @@
 
                                     </div>
                                 </div>";
-                    
-                    ?>
-                    </tbody>
+            }
+                    /* ?> */
+                   echo "</tbody>
                     </table>
-                    </div>
-                <?php
+                    </div>";
+                /* <?php */
             } else {   echo "<p style='text-align: center;'><i>No approved orders at this time.</i></p>";   }
             ?>
         </div>
