@@ -13,13 +13,13 @@
             if (mysqli_num_rows($result) > 0) {
                 /*?>*/
                echo "<div class='table-responsive'>
-                <table class="table">
+                <table class='table'>
                     <thead>
                     <tr>
                         <th>Item</th>
                         <th>Date</th>
                         <th>Shipping Priority</th>
-                        <th style="text-align:center;">Purchase</th>
+                        <th style='text-align:center;'>Purchase</th>
                     </tr>
                     </thead>
                     <tbody>";
