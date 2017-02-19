@@ -89,14 +89,13 @@
                         } // end of while loop
                         
                         
-                        
+              
                         echo "<tr id='approvedOrderTr".$request['id']."'>
                                 <td>".$request['item']."</td>
                                 <td>".date_format(date_create($request['date_added']))."</td>
                                 <td>".$request['user_id']."</td>
                                 <td>".$priority."</td>
-                                <td style='text-align: center;'><button id='".$request['id']."' class='btn requestListButton requestListButtonApprove'><span class='glyphicon glyphicon-ok'></span></button> <button id='".$request['id']."' class='btn requestListButton requestListButtonReject'><span class='glyphicon glyphicon-remove'></span></button></td>
-                                <td style='text-align: center;'><button class=\"btn requestListButton\" data-toggle=\"modal\" data-target=\"#myModal".$request['id']."\"><span class='glyphicon glyphicon-search'></span></button></td>
+                                <td style='text-align:center;'><a class='purchaseButton' data-toggle=\"modal\" data-target=\"#myModal" . $item['id'] . "\"><span class='glyphicon glyphicon-shopping-cart'></span></a></td>
                                 </tr>
 
                                 <div id=\"myModal".$request['id']."\" class=\"modal fade\" role=\"dialog\">
