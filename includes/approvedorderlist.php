@@ -115,7 +115,8 @@
                                                     Estimated Quantity: " . $item['est_quantity'] . "<br />
                                                     Estimated Individual Cost: " . money_format('$%i', $item['est_individual_cost']) . "<br />
                                                     Shipping location: " . $shippingLocation . "<br />
-                                                </p><br />
+                                                    
+                                                </p>
                                                 <p style='color:black;'>
                                                 <p style='color:black;font-weight:300;text-align:center;'>Purchasing Information</p>
                                                 <input type='text' class='form-control' placeholder='Supplier' id='approvedOrderSupplier'><br />
