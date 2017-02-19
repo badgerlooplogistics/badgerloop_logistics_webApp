@@ -108,7 +108,7 @@
                                             </div>
                                             <div class=\"modal-body\">
                                                 <p style='color:black;'>
-                                                    " .$item['item'] . "
+                                                    " . $item['item'] . "
                                                     Item: " . $item['item'] . "<br />
                                                     System: " . $system . "<br />
                                                     Item Description: " . $item['item_disc'] . "<br />
