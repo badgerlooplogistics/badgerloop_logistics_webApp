@@ -11,7 +11,7 @@
             $query = "SELECT * FROM financial_package WHERE status=1 ORDER BY shipping_priority ASC";
             $result = mysqli_query($conn, $query);
             if (mysqli_num_rows($result) > 0) {
-                /* ?> 
+                /* ?> */
                echo "<div class='table-responsive'>
                 <table class='table'>
                     <thead>
@@ -24,7 +24,7 @@
                     </thead>
                     <tbody>";
                     
-                   <?php */
+                   /* <?php */
 
                     while($request = mysqli_fetch_assoc($result)) {
                         switch($request['shipping_priority']) {
