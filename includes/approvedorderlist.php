@@ -98,9 +98,9 @@
                                 <td>" . date_format(date_create($item['date']), 'm-d-Y') . "</td>
                                 <td>" . $priority . "</td>
                                 <td style='text-align:center;'><a class='purchaseButton' data-toggle=\"modal\" data-target=\"#myModal" . $item['id'] . "\"><span class='glyphicon glyphicon-shopping-cart'></span></a></td>
-                                </tr>";
+                                </tr>
 
-                        echo "<div id='myModal" . $item['id'] . "' class='modal fade' role='dialog'>
+                                <div id=\"myModal" . $item['id'] . "\" class=\"modal fade\" role=\"dialog\">
                                     <div class=\"modal-dialog\" >
                                         <div class=\"modal-content\">
                                             <div class=\"modal-header\" >
@@ -138,12 +138,16 @@
 
                                     </div>
                                 </div>";
+                    }
                     /* ?> */
                    echo "</tbody>
                     </table>
                     </div>";
                 /* <?php */
-            } else {   echo "<p style='text-align: center;'><i>No approved orders at this time.</i></p>";   }
+            } else {   
+                echo "<p style='text-align: center;'><i>No approved orders at this time.</i></p>";   
+                
+            }
             ?>
         </div>
     </div>
