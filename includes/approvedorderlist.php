@@ -11,8 +11,7 @@
             $query = "SELECT * FROM financial_package WHERE status=1 ORDER BY shipping_priority ASC";
             $result = mysqli_query($conn, $query);
             if (mysqli_num_rows($result) > 0) {
-                ?>
-               <div class='table-responsive'>
+               echo "<div class='table-responsive'>
                 <table class='table'>
                     <thead>
                     <tr>
@@ -22,8 +21,7 @@
                         <th style='text-align:center;'>Purchase</th>
                     </tr>
                     </thead>
-                    <tbody>
-                   <?php
+                    <tbody>";
 
                     while($request = mysqli_fetch_assoc($result)) {
                         switch($request['shipping_priority']) {
@@ -49,6 +47,7 @@
                             $shippingLocation = "Chamberlin";
                         }
                         
+                        {                    
                         if ($request['system'] == 1) {
                             $system = "Administration";
                         }
@@ -97,9 +96,9 @@
                                 <td>" . date_format(date_create($item['date']), 'm-d-Y') . "</td>
                                 <td>" . $priority . "</td>
                                 <td style='text-align:center;'><a class='purchaseButton' data-toggle=\"modal\" data-target=\"#myModal" . $item['id'] . "\"><span class='glyphicon glyphicon-shopping-cart'></span></a></td>
-                                </tr>";
+                                </tr>
 
-                        echo "<div id='myModal" . $item['id'] . "' class='modal fade' role='dialog'>
+                                <div id=\"myModal". $item['id'] ."\" class=\"modal fade\" role=\"dialog\">
                                     <div class=\"modal-dialog\" >
                                         <div class=\"modal-content\">
                                             <div class=\"modal-header\" >
@@ -108,9 +107,8 @@
                                             </div>
                                             <div class=\"modal-body\">
                                                 <p style='color:black;'>
-                                                    " . $item['item'] . "
                                                     Item: " . $item['item'] . "<br />
-                                                    System: " . $system . "<br />
+                                                    System: " .$system."<br />
                                                     Item Description: " . $item['item_disc'] . "<br />
                                                     Date Added: " . date_format(date_create($item['date_added']), 'm/d/Y') . "<br />
                                                     BOM Supplier: <a href='" . $item['link'] . "' target='_blank'>" . $item['bom_supplier'] . "</a><br />
@@ -137,11 +135,10 @@
 
                                     </div>
                                 </div>";
-                    ?>
-                   </tbody>
+                    }
+                   echo "</tbody>
                     </table>
-                    </div>
-                <?php
+                    </div>";
             } else {   echo "<p style='text-align: center;'><i>No approved orders at this time.</i></p>";   }
             ?>
         </div>
