@@ -87,15 +87,16 @@
                         } else {
                             $system = "Virtual Reality";
                         }
-                        }; // end of while loop
-                    
+                        } // end of while loop
                         
-
+                        
+                        
                         $id = $item['id'];
                         echo "<tr id='approvedOrderTr".$id."'>
                                 <td>" . $item['item'] . "</td>
                                 <td>" . date_format(date_create($item['date']), 'm-d-Y') . "</td>
                                 <td>" . $priority . "</td>
+                                <td>" . $item['item'] . "</td>
                                 <td style='text-align:center;'><a class='purchaseButton' data-toggle=\"modal\" data-target=\"#myModal" . $item['id'] . "\"><span class='glyphicon glyphicon-shopping-cart'></span></a></td>
                                 </tr>";
 
