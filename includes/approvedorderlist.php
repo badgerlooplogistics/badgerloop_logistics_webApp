@@ -48,8 +48,8 @@
                         
                         } else {
                             $shippingLocation = "Chamberlin";
-                        }
                         
+                        {
                         if ($request['system'] == 1) {
                             $system = "Administration";
                         }
