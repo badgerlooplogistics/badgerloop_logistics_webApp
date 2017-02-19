@@ -138,11 +138,11 @@
 
                                     </div>
                                 </div>";
-                    ?>
-                   </tbody>
+                    /* ?> */
+                   echo "</tbody>
                     </table>
-                    </div>
-                <?php
+                    </div>";
+                /* <?php */
             } else {   echo "<p style='text-align: center;'><i>No approved orders at this time.</i></p>";   }
             ?>
         </div>
