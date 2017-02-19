@@ -10,7 +10,7 @@
           <?php
             $query = "SELECT * FROM financial_package WHERE status=1 ORDER BY shipping_priority ASC";
             $result = mysqli_query($conn, $query);
-            if (mysqli_num_rows($result) < 0) {
+            if (mysqli_num_rows($result) > 0) {
                 ?>
                <div class='table-responsive'>
                 <table class='table'>
