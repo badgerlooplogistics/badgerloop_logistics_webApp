@@ -10,7 +10,7 @@
           <?php
             $query = "SELECT * FROM financial_package WHERE status=1 ORDER BY shipping_priority ASC";
             $result = mysqli_query($conn, $query);
-            if (mysqli_num_rows($result) > 0) {
+            if (mysqli_num_rows($result) < 0) {
                 ?>
                <div class='table-responsive'>
                 <table class='table'>
@@ -96,7 +96,6 @@
                                 <td>" . $item['item'] . "</td>
                                 <td>" . date_format(date_create($item['date']), 'm-d-Y') . "</td>
                                 <td>" . $priority . "</td>
-                                <td>" . $item['item'] . "</td>
                                 <td style='text-align:center;'><a class='purchaseButton' data-toggle=\"modal\" data-target=\"#myModal" . $item['id'] . "\"><span class='glyphicon glyphicon-shopping-cart'></span></a></td>
                                 </tr>";
 
