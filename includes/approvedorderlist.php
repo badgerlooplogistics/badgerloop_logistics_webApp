@@ -87,9 +87,8 @@
                         } else {
                             $system = "Virtual Reality";
                         }
-                        } // end of while loop
-            }
-                        
+                        }; // end of while loop
+                    
                         
 
                         $id = $item['id'];
