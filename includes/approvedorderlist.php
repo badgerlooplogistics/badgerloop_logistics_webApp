@@ -90,7 +90,7 @@
                         } // end of while loop
                         
                         
-                        echo "$result";
+
                         $id = $item['id'];
                         echo "<tr id='approvedOrderTr".$id."'>
                                 <td>" . $item['item'] . "</td>
