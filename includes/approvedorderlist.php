@@ -12,7 +12,7 @@
             $result = mysqli_query($conn, $query);
             if (mysqli_num_rows($result) > 0) {
                 ?>
-               echo "<div class='table-responsive'>
+               <div class='table-responsive'>
                 <table class='table'>
                     <thead>
                     <tr>
