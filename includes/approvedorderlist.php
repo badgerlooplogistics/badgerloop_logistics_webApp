@@ -98,7 +98,7 @@
                                 <td>" . $priority . "</td>
                                 <td style='text-align:center;'><a class='purchaseButton' data-toggle=\"modal\" data-target=\"#myModal" . $item['id'] . "\"><span class='glyphicon glyphicon-shopping-cart'></span></a></td>
                                 </tr>";
-
+                       
                         echo "<div id='myModal" . $item['id'] . "' class='modal fade' role='dialog'>
                                     <div class=\"modal-dialog\" >
                                         <div class=\"modal-content\">
@@ -108,7 +108,7 @@
                                             </div>
                                             <div class=\"modal-body\">
                                                 <p style='color:black;'>
-                                                    Hi
+                                                    " .$item['item'] . "
                                                     Item: " . $item['item'] . "<br />
                                                     System: " . $system . "<br />
                                                     Item Description: " . $item['item_disc'] . "<br />
