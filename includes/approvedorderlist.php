@@ -48,6 +48,7 @@
                         
                         } else {
                             $shippingLocation = "Chamberlin";
+                        }
                         
                         {
                         if ($request['system'] == 1) {
