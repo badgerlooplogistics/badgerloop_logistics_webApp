@@ -22,7 +22,7 @@
                         <th style='text-align:center;'>Purchase</th>
                     </tr>
                     </thead>
-                    <tbody>";
+                    <tbody>
                     
                    <?php
 
