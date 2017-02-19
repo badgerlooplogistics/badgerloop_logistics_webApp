@@ -17,6 +17,7 @@
                     <tr>
                         <th>Item</th>
                         <th>Date</th>
+                        <th>Id</th>
                         <th>Shipping Priority</th>
                         <th style='text-align:center;'>Purchase</th>
                     </tr>
