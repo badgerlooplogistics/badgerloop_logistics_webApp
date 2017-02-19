@@ -95,7 +95,7 @@
                                 <td>".date_format(date_create($request['date_added']))."</td>
                                 <td>".$request['user_id']."</td>
                                 <td>".$priority."</td>
-                                <td style='text-align:center;'><a class='purchaseButton' data-toggle=\"modal\" data-target=\"#myModal" . $item['id'] . "\"><span class='glyphicon glyphicon-shopping-cart'></span></a></td>
+                                <td style='text-align:center;'><a class='purchaseButton' data-toggle=\"modal\" data-target=\"#myModal" .$request['id']. "\"><span class='glyphicon glyphicon-shopping-cart'></span></a></td>
                                 </tr>
 
                                 <div id=\"myModal".$request['id']."\" class=\"modal fade\" role=\"dialog\">
