@@ -90,31 +90,32 @@
                         
                         
                         
-                        $id = $item['id'];
-                        echo "<tr id='approvedOrderTr".$id."'>
-                                <td>" . $item['item'] . "</td>
-                                <td>" . date_format(date_create($item['date']), 'm-d-Y') . "</td>
-                                <td>" . $priority . "</td>
-                                <td style='text-align:center;'><a class='purchaseButton' data-toggle=\"modal\" data-target=\"#myModal" . $item['id'] . "\"><span class='glyphicon glyphicon-shopping-cart'></span></a></td>
+                        echo "<tr id='approvedOrderTr".$request['id']."'>
+                                <td>".$request['item']."</td>
+                                <td>".date_format(date_create($request['date_added']))."</td>
+                                <td>".$request['user_id']."</td>
+                                <td>".$priority."</td>
+                                <td style='text-align: center;'><button id='".$request['id']."' class='btn requestListButton requestListButtonApprove'><span class='glyphicon glyphicon-ok'></span></button> <button id='".$request['id']."' class='btn requestListButton requestListButtonReject'><span class='glyphicon glyphicon-remove'></span></button></td>
+                                <td style='text-align: center;'><button class=\"btn requestListButton\" data-toggle=\"modal\" data-target=\"#myModal".$request['id']."\"><span class='glyphicon glyphicon-search'></span></button></td>
                                 </tr>
 
-                                <div id=\"myModal". $item['id'] ."\" class=\"modal fade\" role=\"dialog\">
+                                <div id=\"myModal".$request['id']."\" class=\"modal fade\" role=\"dialog\">
                                     <div class=\"modal-dialog\" >
                                         <div class=\"modal-content\">
                                             <div class=\"modal-header\" >
                                                 <button type = \"button\" class=\"close\" data-dismiss = \"modal\" >&times;</button>
-                                                <h4 class=\"modal-title\" style = 'color:black;' > " . $item['item'] . "</h4>
+                                                <h4 class=\"modal-title\" style ='color:black;'> ".$request['item'] . "</h4>
                                             </div>
                                             <div class=\"modal-body\">
                                                 <p style='color:black;'>
-                                                    Item: " . $item['item'] . "<br />
-                                                    System: " .$system."<br />
-                                                    Item Description: " . $item['item_disc'] . "<br />
-                                                    Date Added: " . date_format(date_create($item['date_added']), 'm/d/Y') . "<br />
-                                                    BOM Supplier: <a href='" . $item['link'] . "' target='_blank'>" . $item['bom_supplier'] . "</a><br />
-                                                    Estimated Quantity: " . $item['est_quantity'] . "<br />
-                                                    Estimated Individual Cost: " . money_format('$%i', $item['est_individual_cost']) . "<br />
-                                                    Shipping location: " . $shippingLocation . "<br />
+                                                    Item: ".$request['item']."<br />
+                                                    System: ".$system."<br />
+                                                    Item Description: " .$request['item_disc'] ."<br />
+                                                    Date Added: " . date_format(date_create($request['date_added']), 'm/d/Y') . "<br />
+                                                    BOM Supplier: <a href='" . $request['link'] . "' target='_blank'>" . $request['bom_supplier'] . "</a><br />
+                                                    Estimated Quantity: " .$request['est_quantity']."<br />
+                                                    Estimated Individual Cost: ".money_format('$%i', $request['est_individual_cost']) . "<br />
+                                                    Shipping location: ".$shippingLocation."<br />
                                                     
                                                 </p>
                                                 <p style='color:black;'>
