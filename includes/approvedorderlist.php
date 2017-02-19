@@ -92,7 +92,7 @@
                         $id = $item['id'];
                         echo "<tr id='approvedOrderTr".$request['id']."'>
                                 <td>".$request['item']."</td>
-                                <td>".date_format(date_create($request['date_added']))."</td>
+                                <td>".date_format(date_create($request['date_added']), 'm/d/Y')."</td>
                                 <td>".$request['user_id']."</td>
                                 <td>".$priority."</td>
                                 <td style='text-align:center;'><a class='purchaseButton' data-toggle=\"modal\" data-target=\"#myModal" .$request['id']. "\"><span class='glyphicon glyphicon-shopping-cart'></span></a></td>
