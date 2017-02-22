@@ -1,16 +1,6 @@
 <?php
 
 require_once("../database.php");
-
-$id = $_POST['id'];
-
-
-$query = "UPDATE financial_package SET status = 3 WHERE id = ".$id;
-mysqli_query($conn, $query);
-
-
-/*
-require_once("../database.php");
 session_start();
 
 $supplier = mysqli_real_escape_string($conn, $_POST['supplier']);
@@ -64,5 +54,5 @@ $newAmount = $spentTotal + $totalCost;
 //$query = "UPDATE teams SET spent_total = {$newAmount} WHERE id={$teamId}";
 mysqli_query($conn, $query);
 
-*/
+
 ?>
