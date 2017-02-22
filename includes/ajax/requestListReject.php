@@ -44,9 +44,9 @@ function slack($message, $channel){
     $ch = curl_init("https://slack.com/api/chat.postMessage");
     $data = http_build_query([
         "token" => "xoxp-144736886548-143951408896-143952102736-d63374c30e0757a0164393091d502f6d",
-    	"kodyfisher15" => $channel, //"#mychannel",
+    	"Just Kody" => $channel, //"#mychannel",
     	"TESTING " => $message, //"Hello, Foo-Bar channel message.",
-    	"username" => "MySlackBot",
+    	"username" => "kodyfisher15",
     ]);
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
     curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
