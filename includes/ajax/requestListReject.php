@@ -58,7 +58,4 @@ function slack($message, $channel){
 }
 
 
-
-
-
 ?>
