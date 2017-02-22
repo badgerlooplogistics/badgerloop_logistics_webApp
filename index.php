@@ -69,7 +69,6 @@
     }
     include_once("includes/metrics.php");
     //include_once("includes/sponsors.php");
-    echo "hi"
 ?>
 <script>
     $("#searchItem").keyup(function () {

@@ -12,7 +12,7 @@ $comments = mysqli_real_escape_string($conn, $_POST['comments']);
 $date = date('Y-m-d', time());
 $id = $_POST['id'];
 $userId = $_SESSION['user'];
-
+/*
 if ($cost == '') {
     $cost = 0;
 }
@@ -25,6 +25,7 @@ if ($shipping == '') {
 if ($tax == '') {
     $tax = 0;
 }
+*/
 
 $query = "UPDATE financial_package SET act_supplier = '{$supplier}', act_individual_cost = {$cost}, act_quantity = {$quantity}, shipping = {$shipping}, tax = {$tax}, date_purchased = '{$date}', purchased_by = {$userId}, comments = '{$comments}', status = 3 WHERE id = {$id}";
 mysqli_query($conn, $query);
