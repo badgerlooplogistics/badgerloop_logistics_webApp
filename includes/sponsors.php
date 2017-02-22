@@ -1,3 +1,4 @@
+
 <div class="panel panel-default" id="section4">
     <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
         <div class="panel-heading">
@@ -45,7 +46,7 @@
                                </div>
                             </div>";
                 }
-                ?>
+                ?>*\
             </div>
         </div>
     </div>
