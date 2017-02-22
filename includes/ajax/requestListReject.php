@@ -37,7 +37,30 @@ $tdName = $td['name'];
 //$txt = $personName.",\n\n   Unfortunately, your request cannot be approved for the following reasons: \n\n      ".$mess."\n\n\n -".$tdName.", Badgerloop Technical Director";
 //$headers = "From: ".$emailTD;
 
-$chat = $slack->chat('@gwozdz');
-$chat->send('Test');
+//$chat = $slack->chat('@kkfisher3');
+//$chat->send('Test');
+
+public static function slack($message, $channel)
+{
+    $ch = curl_init("https://slack.com/api/chat.postMessage");
+    //$channel = "Badgerloop"
+    $data = http_build_query([
+        "token" => "YOUR_API_TOKEN",
+    	"Badgerloop" => $channel, //"#mychannel",
+    	"TESTING " => $message, //"Hello, Foo-Bar channel message.",
+    	"username" => "MySlackBot",
+    ]);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    $result = curl_exec($ch);
+    curl_close($ch);
+    return $result;
+}
+
+
+
+
 
 ?>
