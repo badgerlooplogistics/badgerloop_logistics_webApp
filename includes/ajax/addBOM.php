@@ -48,10 +48,11 @@ $spentTotal = $team['spent_total'];
 
 
 // calculate total cost
-$totalCost = $cost*$quantity + $shipping + $tax;
-$newAmount = $spentTotal + $totalCost;
 
-$query = "UPDATE teams SET spent_total = {$newAmount} WHERE id={$teamId}";
+//$totalCost = $cost*$quantity + $shipping + $tax;
+//$newAmount = $spentTotal + $totalCost;
+
+//$query = "UPDATE teams SET spent_total = {$newAmount} WHERE id={$teamId}";
 //mysqli_query($conn, $query);
 
 
