@@ -39,7 +39,7 @@ $tdName = $td['name'];
 
 //$chat = $slack->chat('@kkfisher3');
 //$chat->send('Test');
-
+/*
 function slack($message, $channel){
     $ch = curl_init("https://slack.com/api/chat.postMessage");
     $data = http_build_query([
@@ -57,5 +57,5 @@ function slack($message, $channel){
     return $result;
 }
 
-
+*/
 ?>
