@@ -42,12 +42,12 @@ $tdName = $td['name'];
 
 public static function slack($message, $channel)
 {
-    //$ch = curl_init("https://slack.com/api/chat.postMessage");
-    $ch = curl_init("https://api.slack.com/methods/auth.test/test");
+    $ch = curl_init("https://slack.com/api/chat.postMessage");
+    //$ch = curl_init("https://api.slack.com/methods/auth.test/test");
     //$channel = "Badgerloop"
     $data = http_build_query([
-        //"token" => "need this",
-    	"kkfisher3" => $channel, //"#mychannel",
+        "token" => "xoxp-144736886548-143951408896-143952102736-d63374c30e0757a0164393091d502f6d",
+    	"kodyfisher15" => $channel, //"#mychannel",
     	"TESTING " => $message, //"Hello, Foo-Bar channel message.",
     	"username" => "MySlackBot",
     ]);
