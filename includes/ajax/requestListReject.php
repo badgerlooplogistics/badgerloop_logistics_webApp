@@ -40,8 +40,7 @@ $tdName = $td['name'];
 //$chat = $slack->chat('@kkfisher3');
 //$chat->send('Test');
 
-public static function slack($message, $channel)
-{
+function slack($message, $channel){
     $ch = curl_init("https://slack.com/api/chat.postMessage");
     //$ch = curl_init("https://api.slack.com/methods/auth.test/test");
     //$channel = "Badgerloop"
