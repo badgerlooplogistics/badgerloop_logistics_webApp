@@ -420,19 +420,19 @@
     });
 
     $("#addBOMButton").click(function() {
-        //var supplier = $("#approvedOrderSupplier").val();
-        //var cost = $("#approvedOrderCost").val();
-        //var quantity = $("#approvedOrderQuantity").val();
-        //var shipping = $("#approvedOrderShipping").val();
-        //var tax = $("#approvedOrderTax").val();
-        //var comments = $("#approvedOrderComments").val();
-        //var id = $("#approvedOrderId").val();
-        var id = '123';
-        //var dataString = "id=" + id + "&supplier=" + supplier + "&cost=" + cost + "&quantity=" + quantity + "&shipping=" + shipping + "&tax=" + tax + "&comments=" + comments;
+        var supplier = $("#approvedOrderSupplier").val();
+        var cost = $("#approvedOrderCost").val();
+        var quantity = $("#approvedOrderQuantity").val();
+        var shipping = $("#approvedOrderShipping").val();
+        var tax = $("#approvedOrderTax").val();
+        var comments = $("#approvedOrderComments").val();
+        var id = $("#approvedOrderId").val();
+        
+        var dataString = "id=" + id + "&supplier=" + supplier + "&cost=" + cost + "&quantity=" + quantity + "&shipping=" + shipping + "&tax=" + tax + "&comments=" + comments;
         $.ajax({
             type: "POST",
             url: "includes/ajax/addBOM.php",
-            //data: dataString,
+            data: dataString,
             success: function(data) {
                 $('#myModal'+id).modal('hide');
                 var tr = "approvedOrderTr" + id;
