@@ -68,7 +68,7 @@
         include_once("includes/approvedorderlist.php");
     }
     include_once("includes/metrics.php");
-    include_once("includes/sponsors.php");
+    //include_once("includes/sponsors.php");
 ?>
 <script>
     $("#searchItem").keyup(function () {
