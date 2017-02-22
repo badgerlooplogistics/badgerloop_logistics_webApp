@@ -39,13 +39,14 @@ $tdName = $td['name'];
 
 //$chat = $slack->chat('@kkfisher3');
 //$chat->send('Test');
-/*
+
 public static function slack($message, $channel)
 {
-    $ch = curl_init("https://slack.com/api/chat.postMessage");
+    //$ch = curl_init("https://slack.com/api/chat.postMessage");
+    $ch = curl_init("https://api.slack.com/methods/auth.test/test");
     //$channel = "Badgerloop"
     $data = http_build_query([
-        "token" => "f790f554e9e0d0a63f1d70c8a8324934",
+        //"token" => "need this",
     	"kkfisher3" => $channel, //"#mychannel",
     	"TESTING " => $message, //"Hello, Foo-Bar channel message.",
     	"username" => "MySlackBot",
@@ -59,7 +60,7 @@ public static function slack($message, $channel)
     return $result;
 }
 
-*/
+
 
 
 
