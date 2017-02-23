@@ -41,7 +41,7 @@ if (mysqli_affected_rows($conn) > 0) {
 
 <?php
 
-$message = "Hello! There is a new purchase request from $user"; 
+$message = "Hello! There is a new purchase request from $userID"; 
 $room = "kkfisher3"; 
 $icon = ":moyai:"; 
 $username = "George-bot";
