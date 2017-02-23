@@ -38,7 +38,7 @@ if (mysqli_affected_rows($conn) > 0) {
     echo "fail";
 }
 
-$message = "Hello! There is a new purchase request from $userID"; 
+$message = "Hello! There is a new purchase request from ".$user; 
 $room = "kkfisher3"; 
 $icon = ":moyai:"; 
 $username = "George-bot";
