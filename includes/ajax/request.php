@@ -37,3 +37,31 @@ if (mysqli_affected_rows($conn) > 0) {
 } else {
     echo "fail";
 }
+
+
+$message = "Hello! There is a new purchase request from (user)"; 
+$room = "kkfisher3"; 
+$icon = ":moyai:"; 
+$data = "payload=" . json_encode(array(         
+        "channel"       =>  "@{$room}",
+        "text"          =>  $message,
+        "icon_emoji"    =>  $icon
+    ));
+$url = "https://hooks.slack.com/services/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";
+         
+ 
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+$result = curl_exec($ch);
+echo var_dump($result);
+if($result === false)
+{
+    echo 'Curl error: ' . curl_error($ch);
+}
+ 
+curl_close($ch);
+
