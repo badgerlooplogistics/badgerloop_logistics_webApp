@@ -44,7 +44,7 @@ $amount = "500 dollars";
 $message = "Hello! There is a new purchase request from ".$purchasers_name." for ".$amount; 
 $room = "kkfisher3"; 
 $icon = ":moyai:"; 
-$username = "George-bot";
+$username = "Georgebot";
 $data = "payload=" . json_encode(array(         
         "channel"       =>  "@{$room}",
         "text"          =>  $message,
