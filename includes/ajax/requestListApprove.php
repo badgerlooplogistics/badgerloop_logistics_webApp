@@ -15,7 +15,7 @@ mysqli_query($conn, $query);
 
 $message = "hello world from curl"; 
 $room = "kkfisher3"; 
-$icon = ":smile:"; 
+$icon = ":moyai:"; 
 $data = "payload=" . json_encode(array(         
         "channel"       =>  "@{$room}",
         "text"          =>  $message,
