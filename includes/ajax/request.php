@@ -41,10 +41,10 @@ if (mysqli_affected_rows($conn) > 0) {
 
 <?php
 
-$message = "Hello! There is a new purchase request from (user)"; 
+$message = "Hello! There is a new purchase request from $user"; 
 $room = "kkfisher3"; 
 $icon = ":moyai:"; 
-$username = "George";
+$username = "George-bot";
 $data = "payload=" . json_encode(array(         
         "channel"       =>  "@{$room}",
         "text"          =>  $message,
