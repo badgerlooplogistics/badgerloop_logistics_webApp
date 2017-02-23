@@ -37,9 +37,6 @@ if (mysqli_affected_rows($conn) > 0) {
 } else {
     echo "fail";
 }
-?>
-
-<?php
 
 $message = "Hello! There is a new purchase request from $userID"; 
 $room = "kkfisher3"; 
