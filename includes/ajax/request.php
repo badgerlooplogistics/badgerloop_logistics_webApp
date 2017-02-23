@@ -38,6 +38,8 @@ if (mysqli_affected_rows($conn) > 0) {
     echo "fail";
 }
 
+$user = "Elon Musk";
+
 $message = "Hello! There is a new purchase request from ".$user; 
 $room = "kkfisher3"; 
 $icon = ":moyai:"; 
