@@ -44,10 +44,12 @@ if (mysqli_affected_rows($conn) > 0) {
 $message = "Hello! There is a new purchase request from (user)"; 
 $room = "kkfisher3"; 
 $icon = ":moyai:"; 
+$username = "George";
 $data = "payload=" . json_encode(array(         
         "channel"       =>  "@{$room}",
         "text"          =>  $message,
-        "icon_emoji"    =>  $icon
+        "icon_emoji"    =>  $icon,
+        "username"      =>  $username
     ));
 $url = "https://hooks.slack.com/services/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";
          
