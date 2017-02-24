@@ -430,6 +430,7 @@
         var id = $("#approvedOrderId").val();
         
         var dataString = "id=" + id + "&supplier=" + supplier + "&cost=" + cost + "&quantity=" + quantity + "&shipping=" + shipping + "&tax=" + tax + "&comments=" + comments;
+
         $.ajax({
             type: "POST",
             url: "includes/ajax/addBOM.php",
@@ -442,6 +443,7 @@
             error: function(data) {
             }
         });
+        console.log("Add to BOM button1");
     });
 
 </script>
