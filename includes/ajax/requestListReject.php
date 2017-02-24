@@ -1,7 +1,13 @@
 <?php
+
+//echo "<script type="text/javascript">console.log(\"".$value."\")</script>";
+
 session_start();
 require_once("../database.php");
 include 'configure.php';
+
+$value = "Pls work";
+echo "<script type='text/javascript'>console.log(\"".$value."\")</script>";
 
 
 $id = $_POST['id'];
@@ -30,7 +36,7 @@ $td = mysqli_fetch_assoc($result);
 $emailTD = $td['email'];
 $tdName = $td['name'];
 
-
+/*
 $value = "Top";
 echo "<script>console.log('Top')</script>";
 echo "<script>console.log($value)</script>";
@@ -41,8 +47,6 @@ echo "<script>console.log(($value))</script>";
 echo("<script>console.log($value)</script>");
 echo "\"top\"";
 echo("\"top\"");
-
-
 //print "$value";
 echo "<script>console.log(\"$value\")</script>";
 echo("<script>console.log('Hello')</script>");
