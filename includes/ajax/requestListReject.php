@@ -4,11 +4,13 @@ require_once("../database.php");
 include 'configure.php';
 
 $value = "Top";
-//print "<script>console.log($value)</script>";
+echo "<script>console.log('Top')</script>";
+echo "<script>console.log($value)</script>";
+
 //print "$value";
-echo "<script>console.log(\"$value\")</script>";
-echo("<script>console.log('Hello')</script>");
-echo("<script>console.log(\"$value\");</script>");
+//echo "<script>console.log(\"$value\")</script>";
+//echo("<script>console.log('Hello')</script>");
+//echo("<script>console.log(\"$value\");</script>");
 
 $id = $_POST['id'];
 $mess = $_POST['mess'];
@@ -29,15 +31,12 @@ $email = $person['email'];
 $personName = $person['name'];
 
 
-
 // get email of TD
 $query = "SELECT * FROM users WHERE id=".$_SESSION['user'];
 $result = mysqli_query($conn, $query);
 $td = mysqli_fetch_assoc($result);
 $emailTD = $td['email'];
 $tdName = $td['name'];
-
-
 
 
 //$to = "gwozdz@wisc.edu";
