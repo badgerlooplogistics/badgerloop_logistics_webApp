@@ -27,13 +27,13 @@ if ($tax == '') {
     $tax = 0;
 }
 
-/*
+
 $id = $_POST['id'];
 
 
 $query = "UPDATE financial_package SET status = 3 WHERE id = ".$id;
 mysqli_query($conn, $query);
-*/
+
 
 
 $query = "UPDATE financial_package SET act_supplier = '{$supplier}', act_individual_cost = {$cost}, act_quantity = {$quantity}, shipping = {$shipping}, tax = {$tax}, date_purchased = '{$date}', purchased_by = {$userId}, comments = '{$comments}', status = 3 WHERE id = {$id}";
@@ -64,6 +64,7 @@ $newAmount = $spentTotal + $totalCost;
 
 $query = "UPDATE teams SET spent_total = {$newAmount} WHERE id={$teamId}";
 mysqli_query($conn, $query);
+
 
 
 ?>
