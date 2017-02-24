@@ -3,7 +3,7 @@
 require_once("../database.php");
 session_start();
 
-echo '<script>console.log("Top")</script>';
+//echo '<script>console.log("Top")</script>';
 
 $supplier = mysqli_real_escape_string($conn, $_POST['supplier']);
 $cost = mysqli_real_escape_string($conn, $_POST['cost']);
@@ -67,7 +67,7 @@ $newAmount = $spentTotal + $totalCost;
 $query = "UPDATE teams SET spent_total = {$newAmount} WHERE id={$teamId}";
 mysqli_query($conn, $query);
 
-echo '<script>console.log("Bottom")</script>';
+//echo '<script>console.log("Bottom")</script>';
 
 
 ?>

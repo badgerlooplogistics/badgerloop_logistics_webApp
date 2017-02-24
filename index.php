@@ -400,6 +400,7 @@
 
     $(".requestListButtonReject").click(function() {
         // reject request
+        console.log(data);
         var mess = prompt("Please enter your reason for the rejection:", "");
         if (mess != null) {
             var requestId = $(this).attr('id');
@@ -417,6 +418,7 @@
                 }
             });
         }
+        console.log(data);
     });
 
     $(".addBOMButton").click(function() {
