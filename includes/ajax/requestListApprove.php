@@ -8,11 +8,14 @@ $id = $_POST['id'];
 $query = "UPDATE financial_package SET status = 1 WHERE id = ".$id;
 mysqli_query($conn, $query);
 
+
+
+/*
 $purchasers_name = "Elon Musk";
 $amount = "500 dollars";
 
 $message = "Hello! There is a new order from ".$purchasers_name." for $".$cost; 
-$room = "akuo"; 
+$room = "kkfisher3"; 
 $icon = ":moyai:"; 
 $username = "Purchasing bot";
 $data = "payload=" . json_encode(array(         
@@ -38,5 +41,6 @@ if($result === false)
 }
  
 curl_close($ch);
+*/
 ?>
 

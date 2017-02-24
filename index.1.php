@@ -419,7 +419,7 @@
         }
     });
 
-    $(".addBOMButton").click(function() {
+    $("#addBOMButton").click(function() {
         var supplier = $("#approvedOrderSupplier").val();
         var cost = $("#approvedOrderCost").val();
         var quantity = $("#approvedOrderQuantity").val();
