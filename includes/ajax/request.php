@@ -36,7 +36,7 @@ if (mysqli_affected_rows($conn) > 0) {
     echo "success";
 } else {
     echo "fail";
-}
+};
 
 $purchasers_name = "Elon Musk";
 $amount = "500 dollars";
