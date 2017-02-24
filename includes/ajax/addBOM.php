@@ -3,6 +3,8 @@
 require_once("../database.php");
 session_start();
 
+echo '<script>console.log("Top")</script>';
+
 $supplier = mysqli_real_escape_string($conn, $_POST['supplier']);
 $cost = mysqli_real_escape_string($conn, $_POST['cost']);
 $quantity = mysqli_real_escape_string($conn, $_POST['quantity']);
@@ -51,7 +53,7 @@ $result = mysqli_query($conn, $query);
 $userTeam = mysqli_fetch_assoc($result);
 $teamId = $userTeam['team_id'];
 
-
+echo '<script>console.log("Middle")</script>';
 $query = "SELECT spent_total FROM teams WHERE id = {$teamId}";
 $result = mysqli_query($conn, $query);
 $team = mysqli_fetch_assoc($result);
@@ -65,6 +67,7 @@ $newAmount = $spentTotal + $totalCost;
 $query = "UPDATE teams SET spent_total = {$newAmount} WHERE id={$teamId}";
 mysqli_query($conn, $query);
 
+echo '<script>console.log("Bottom")</script>';
 
 
 ?>
