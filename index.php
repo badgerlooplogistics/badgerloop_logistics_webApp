@@ -420,6 +420,7 @@
     });
 
     $("#addBOMButton").click(function() {
+        console.log("Hey");
         var supplier = $("#approvedOrderSupplier").val();
         var cost = $("#approvedOrderCost").val();
         var quantity = $("#approvedOrderQuantity").val();
