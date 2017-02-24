@@ -3,10 +3,12 @@ session_start();
 require_once("../database.php");
 include 'configure.php';
 
-//$value = "Top";
+$value = "Top";
 //echo "<script>console.log($value)</script>";
-print "Top";
+print "$value";
 //echo "'<script>console.log(\"$value\")</script>'";
+
+echo("<script>console.log('Alright');</script>");
 
 $id = $_POST['id'];
 $mess = $_POST['mess'];
