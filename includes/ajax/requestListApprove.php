@@ -12,9 +12,9 @@ $purchasers_name = "Elon Musk";
 $amount = "500 dollars";
 
 $message = "Hello! There is a new order from ".$purchasers_name." for $".$cost; 
-$room = "kkfisher3"; 
+$room = "akuo"; 
 $icon = ":moyai:"; 
-$username = "Georgebot";
+$username = "Purchasing bot";
 $data = "payload=" . json_encode(array(         
         "channel"       =>  "@{$room}",
         "text"          =>  $message,
