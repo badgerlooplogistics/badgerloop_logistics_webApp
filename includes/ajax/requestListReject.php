@@ -3,9 +3,10 @@ session_start();
 require_once("../database.php");
 include 'configure.php';
 
-$value = "Top";
-//print "'<script>console.log(\"$value\")</script>'";
-echo "<script>console.log($value)</script>";
+//$value = "Top";
+//echo "<script>console.log($value)</script>";
+print "Top";
+//echo "'<script>console.log(\"$value\")</script>'";
 
 $id = $_POST['id'];
 $mess = $_POST['mess'];
