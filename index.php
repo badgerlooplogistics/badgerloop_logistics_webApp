@@ -419,7 +419,7 @@
         }
     });
 
-    $("#addBOMButton").click(function() {
+    $(".addBOMButton").click(function() {
         console.log("Add to BOM button");
         var supplier = $("#approvedOrderSupplier").val();
         var cost = $("#approvedOrderCost").val();
