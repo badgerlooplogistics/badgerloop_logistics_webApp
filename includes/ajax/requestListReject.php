@@ -38,14 +38,8 @@ $value = "Top";
 echo "<script>console.log\"(".$value."\")</script>";
 echo "<script>console.log($value)</script>";
 echo "<script>console.log(($value))</script>";
+echo("<script>console.log(($value))</script>");
 
-
-
-
-echo "<script>console.log($value)</script";
-echo("<script>Top</script>");
-echo("<script>$value</script>");
-echo("<script>console.log\"(".$value.")\"</script>");
 
 //print "$value";
 //echo "<script>console.log(\"$value\")</script>";
