@@ -4,11 +4,11 @@ require_once("../database.php");
 include 'configure.php';
 
 $value = "Top";
-//echo "<script>console.log($value)</script>";
-print "$value";
-//echo "'<script>console.log(\"$value\")</script>'";
-
-echo("<script>console.log('$value');</script>");
+//print "<script>console.log($value)</script>";
+//print "$value";
+echo "<script>console.log(\"$value\")</script>";
+echo("<script>console.log('Hello')</script>");
+echo("<script>console.log(\"$value\");</script>");
 
 $id = $_POST['id'];
 $mess = $_POST['mess'];
