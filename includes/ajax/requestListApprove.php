@@ -8,15 +8,18 @@ $id = $_POST['id'];
 $query = "UPDATE financial_package SET status = 1 WHERE id = ".$id;
 mysqli_query($conn, $query);
 
+$purchasers_name = "Elon Musk";
+$amount = "500 dollars";
 
-
-$message = "hello world from curl"; 
+$message = "Hello! There is a new order from ".$purchasers_name." for $".$cost; 
 $room = "kkfisher3"; 
 $icon = ":moyai:"; 
+$username = "Georgebot";
 $data = "payload=" . json_encode(array(         
         "channel"       =>  "@{$room}",
         "text"          =>  $message,
-        "icon_emoji"    =>  $icon
+        "icon_emoji"    =>  $icon,
+        "username"      =>  $username
     ));
 $url = "https://hooks.slack.com/services/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";
          
@@ -35,6 +38,5 @@ if($result === false)
 }
  
 curl_close($ch);
-
 ?>
 
