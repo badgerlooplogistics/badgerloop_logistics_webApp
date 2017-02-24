@@ -4,7 +4,8 @@ require_once("../database.php");
 include 'configure.php';
 
 $value = "Top";
-echo "'<script>console.log(\"$value\")</script>'";
+print "'<script>console.log(\"$value\")</script>'";
+print "'<script>console.log('HERE')</script>'";
 
 $id = $_POST['id'];
 $mess = $_POST['mess'];
@@ -25,8 +26,6 @@ $email = $person['email'];
 $personName = $person['name'];
 
 
-$value = "Middle";
-echo "'<script>console.log(\"$value\")</script>'";
 
 // get email of TD
 $query = "SELECT * FROM users WHERE id=".$_SESSION['user'];
