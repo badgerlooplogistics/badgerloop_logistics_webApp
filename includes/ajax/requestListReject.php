@@ -35,7 +35,8 @@ $value = "Top";
 //echo "<script>console.log('Top')</script>";
 //echo "<script>console.log($value)</script>";
 
-echo("<script>console.log\"(".$value."\")</script>");
+echo "<script>console.log\"(".$value."\")</scrip";
+echo "<script>console.log($value)</script";
 echo("<script>Top</script>");
 echo("<script>$value</script>");
 echo("<script>console.log\"(".$value.")\"</script>");

@@ -8,9 +8,6 @@ $id = $_POST['id'];
 $query = "UPDATE financial_package SET status = 1 WHERE id = ".$id;
 mysqli_query($conn, $query);
 
-$value = "Top";
-echo "<script>console.log('Top')</script>";
-echo "<script>console.log($value)</script>";
 
 /*
 $purchasers_name = "Elon Musk";
