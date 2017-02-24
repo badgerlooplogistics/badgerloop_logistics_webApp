@@ -8,7 +8,7 @@ $value = "Top";
 print "$value";
 //echo "'<script>console.log(\"$value\")</script>'";
 
-echo("<script>console.log('Alright');</script>");
+echo("<script>console.log('$value');</script>");
 
 $id = $_POST['id'];
 $mess = $_POST['mess'];
