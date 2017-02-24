@@ -7,7 +7,7 @@ require_once("../database.php");
 include 'configure.php';
 
 $value = "Pls work";
-echo "<script type='text/javascript'>console.log(\"".$value."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
 
 
 $id = $_POST['id'];
