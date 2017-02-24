@@ -400,6 +400,7 @@
 
     $(".requestListButtonReject").click(function() {
         // reject request
+        console.log("Hey");
         var mess = prompt("Please enter your reason for the rejection:", "");
         if (mess != null) {
             var requestId = $(this).attr('id');
@@ -420,7 +421,7 @@
     });
 
     $("#addBOMButton").click(function() {
-        console.log("Hey");
+        console.log("Add to BOM button");
         var supplier = $("#approvedOrderSupplier").val();
         var cost = $("#approvedOrderCost").val();
         var quantity = $("#approvedOrderQuantity").val();
