@@ -40,6 +40,7 @@ echo "<script>console.log($value)</script>";
 echo "<script>console.log(($value))</script>";
 echo("<script>console.log($value)</script>");
 echo "\"top\"";
+echo("\"top\"");
 
 
 //print "$value";
