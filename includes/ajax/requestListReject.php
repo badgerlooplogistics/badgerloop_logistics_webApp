@@ -3,19 +3,6 @@ session_start();
 require_once("../database.php");
 include 'configure.php';
 
-$value = "Top";
-//echo "<script>console.log('Top')</script>";
-//echo "<script>console.log($value)</script>";
-
-echo("<script>console.log\"(".$value."\")</script>");
-echo("<script>Top</script>");
-echo("<script>$value</script>");
-echo("<script>console.log\"(".$value.")\"</script>");
-
-//print "$value";
-//echo "<script>console.log(\"$value\")</script>";
-//echo("<script>console.log('Hello')</script>");
-//echo("<script>console.log(\"$value\");</script>");
 
 $id = $_POST['id'];
 $mess = $_POST['mess'];
@@ -42,6 +29,21 @@ $result = mysqli_query($conn, $query);
 $td = mysqli_fetch_assoc($result);
 $emailTD = $td['email'];
 $tdName = $td['name'];
+
+
+$value = "Top";
+//echo "<script>console.log('Top')</script>";
+//echo "<script>console.log($value)</script>";
+
+echo("<script>console.log\"(".$value."\")</script>");
+echo("<script>Top</script>");
+echo("<script>$value</script>");
+echo("<script>console.log\"(".$value.")\"</script>");
+
+//print "$value";
+//echo "<script>console.log(\"$value\")</script>";
+//echo("<script>console.log('Hello')</script>");
+//echo("<script>console.log(\"$value\");</script>");
 
 
 //$to = "gwozdz@wisc.edu";
