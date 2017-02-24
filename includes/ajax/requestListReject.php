@@ -32,8 +32,8 @@ $tdName = $td['name'];
 
 
 $value = "Top";
-//echo "<script>console.log('Top')</script>";
-//echo "<script>console.log($value)</script>";
+echo "<script>console.log('Top')</script>";
+echo "<script>console.log($value)</script>";
 
 echo "<script>console.log\"(".$value."\")</script>";
 echo "<script>console.log($value)</script>";
@@ -44,9 +44,9 @@ echo("\"top\"");
 
 
 //print "$value";
-//echo "<script>console.log(\"$value\")</script>";
-//echo("<script>console.log('Hello')</script>");
-//echo("<script>console.log(\"$value\");</script>");
+echo "<script>console.log(\"$value\")</script>";
+echo("<script>console.log('Hello')</script>");
+echo("<script>console.log('Top');</script>");
 
 
 //$to = "gwozdz@wisc.edu";
