@@ -3,6 +3,8 @@ session_start();
 require_once("../database.php");
 include 'configure.php';
 
+echo '<script>console.log("Top")</script>';
+
 $id = $_POST['id'];
 $mess = $_POST['mess'];
 
@@ -21,6 +23,7 @@ $person = mysqli_fetch_assoc($result);
 $email = $person['email'];
 $personName = $person['name'];
 
+echo '<script>console.log("Tp")</script>';
 
 // get email of TD
 $query = "SELECT * FROM users WHERE id=".$_SESSION['user'];
