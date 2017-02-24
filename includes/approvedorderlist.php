@@ -131,7 +131,7 @@
                                                 </p>
                                             </div>
                                             <div class=\"modal-footer\">
-                                                <button type=\"button\" class=\"btn btn-default addBOMButton\" id='addBOMButton'>Add to BOM</button> <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
+                                                <button type='button' class='btn btn-default addBOMButton' id='addBOMButton'>Add to BOM</button> <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
                                             </div>
                                         </div>
 
