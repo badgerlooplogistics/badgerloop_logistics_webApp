@@ -28,6 +28,8 @@
             <br />
             <div class="panel-group" id="teamAccordion">
                 <?php
+                $value = "bom kinda mid";
+                echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
                 $query = "SELECT * FROM teams ORDER BY list_order";
                 $result = mysqli_query($conn, $query);
                 while($team = mysqli_fetch_assoc($result)) {
@@ -147,3 +149,7 @@
         </div>
     </div>
 </div>
+<?php
+$value = "bom kinda mid";
+echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
+?>
