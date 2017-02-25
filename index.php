@@ -441,6 +441,7 @@
                 $('#myModal'+id).modal('hide');
                 var tr = "approvedOrderTr" + id;
                 $("#"+tr).hide("fade");
+                console.log(data);
             },
             error: function(data) {
             }

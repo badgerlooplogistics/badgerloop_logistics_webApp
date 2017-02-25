@@ -3,7 +3,9 @@
 require_once("../database.php");
 session_start();
 
-//echo '<script>console.log("Top")</script>';
+$value = "BOM Top";
+echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
+
 
 $supplier = mysqli_real_escape_string($conn, $_POST['supplier']);
 $cost = mysqli_real_escape_string($conn, $_POST['cost']);
@@ -31,6 +33,10 @@ if ($tax == '') {
 
 
 $id = $_POST['id'];
+
+$value = "BOM Mid";
+echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
+
 
 
 $query = "UPDATE financial_package SET status = 3 WHERE id = ".$id;
@@ -67,7 +73,9 @@ $newAmount = $spentTotal + $totalCost;
 $query = "UPDATE teams SET spent_total = {$newAmount} WHERE id={$teamId}";
 mysqli_query($conn, $query);
 
-//echo '<script>console.log("Bottom")</script>';
+$value = "BOM Botton";
+echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
+
 
 
 ?>
