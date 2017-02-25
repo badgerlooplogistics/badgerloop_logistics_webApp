@@ -444,6 +444,7 @@
                 console.log(data);
             },
             error: function(data) {
+            console.log(data);
             }
         });
         //console.log("Add to BOM button1");
