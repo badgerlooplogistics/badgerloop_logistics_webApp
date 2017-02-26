@@ -41,6 +41,22 @@
                             //default:
                                 //$priority = "3-5 Business Days";
                         }
+                    /*
+                    while($request = mysqli_fetch_assoc($result)) {
+                        switch($request['shipping_location']) {
+                            case 1:
+                                $shippingLocation = "Overnight";
+                                break;
+                            case 2:
+                                $shippingLocation = "2-3 Business Days";
+                                break;
+                            case 3:
+                                $shippingLocation = "3-5 Business Days";
+                                break;
+                        }
+                        */
+                  
+                        }
                         if ($item['shipping_location'] == 0) {
                             $shippingLocation = "EEHQ";
                         } 
@@ -50,6 +66,8 @@
                         if ($request['shipping_location'] == 2) {
                             $shippingLocation = "Other";
                         }
+                        
+                        
                         
                         {                    
                         if ($request['system'] == 1) {
@@ -92,7 +110,7 @@
                             $system = "Virtual Reality";
                         }
                         }
-                        
+                        {
                         
                         $id = $item['id'];
                         echo "<tr id='approvedOrderTr".$request['id']."'>
@@ -145,7 +163,8 @@
                    echo "</tbody>
                     </table>
                     </div>";
-            } else {   echo "<p style='text-align: center;'><i>No approved orders at this time.</i></p>";   }
+            }
+            else {   echo "<p style='text-align: center;'><i>No approved orders at this time.</i></p>";   }
             ?>
         </div>
     </div>
