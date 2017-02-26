@@ -26,7 +26,7 @@
                             <tbody>";
                     
                     while($request = mysqli_fetch_assoc($result)) {
-                        switch($request['shipping_priority']){
+                        switch($request['shipping_priority']) {
                             case 1:
                                 $priority = "Overnight";
                                 break;
@@ -42,8 +42,8 @@
                         }
                             //default:
                                 //$priority = "3-5 Business Days";
-                        /*
                         
+                        /*    
                         }
                         if ($request['shipping_priority'] == 1) {
                             $priority = "Overnight";
@@ -58,60 +58,60 @@
                             $priority = "Amazon Prime";
                         }
                         */
-                        
                         {
-                            if ($request['shipping_location'] == 0) {
+                        if ($item['shipping_location'] == 0) {
                             $shippingLocation = "EEHQ";
-                            }
-                            if ($request['shipping_location'] == 1) {
+                        } 
+                        if ($item['shipping_location'] == 1) {
                             $shippingLocation = "MEHQ";
-                            }
-                            if ($request['shipping_location'] == 2) {
+                        }
+                        if ($request['shipping_location'] == 2) {
                             $shippingLocation = "Other";
-                            }
                         }
                         
-                        {
-                            if ($request['system'] == 1) {
-                                $system = "Administration";
-                            }
-                            if ($request['system'] == 2) {
-                                $system = "Batteries";
-                            }
-                            if ($request['system'] == 3) {
-                                $system = "Braking";
-                            }
-                            if ($request['system'] == 4) {
-                                $system = "Composites";
-                            }
-                            if ($request['system'] == 5) {
-                                $system = "Controls";
-                            }
-                            if ($request['system'] == 6) {
-                                $system = "Electronics";
-                            }
-                            if ($request['system'] == 7) {
-                                $system = "Fabrication";
-                            }
-                            if ($request['system'] == 8) {
-                                $system = "Propulsion";
-                            }
-                            if ($request['system'] == 9) {
-                                $system = "Software";
-                            }
-                            if ($request['system'] == 10) {
-                                $system = "Structural Analysis";
-                            }
-                            if ($request['system'] == 11) {
-                                $system = "Structural Design";
-                            }
-                            if ($request['system'] == 12) {
-                                $system = "Suspension and Stability";
-                            }
-                            if ($request['system'] == 13) {
-                                $system = "Virtual Reality";
-                            }
-                        }//closes system "if"
+                        
+                        
+                        {                    
+                        if ($request['system'] == 1) {
+                            $system = "Administration";
+                        }
+                        if ($request['system'] == 2) {
+                            $system = "Batteries";
+                        }
+                        if ($request['system'] == 3) {
+                            $system = "Braking";
+                        }
+                        if ($request['system'] == 4) {
+                            $system = "Composites";
+                        }
+                        if ($request['system'] == 5) {
+                            $system = "Controls";
+                        }
+                        if ($request['system'] == 6) {
+                            $system = "Electronics";
+                        }
+                        if ($request['system'] == 7) {
+                            $system = "Fabrication";
+                        }
+                        if ($request['system'] == 8) {
+                            $system = "Propulsion";
+                        }
+                        if ($request['system'] == 9) {
+                            $system = "Software";
+                        }
+                        if ($request['system'] == 10) {
+                            $system = "Structural Analysis";
+                        }
+                        if ($request['system'] == 11) {
+                            $system = "Structural Design";
+                        }
+                        if ($request['system'] == 12) {
+                            $system = "Suspension and Stability";
+                        }
+                        if ($request['system'] == 13) {
+                            $system = "Virtual Reality";
+                        }
+                        }
                     
                         echo "<tr id='requestListTr".$request['id']."'>
                                 <td>".$request['item']."</td>
@@ -148,10 +148,12 @@
                                         </div>
                                     </div>
                                 </div>";
+}
+                    }                    
                     echo "</tbody>
                          </table>
                         </div>";
-                    } 
+                   // } 
                 }//closes 1st if
                 else{
                     echo "<p style='text-align:center;'><i>No purchase order requests at this time.</i></p>";
