@@ -431,12 +431,12 @@
         //var comments = $("#approvedOrderComments").val();
         var id = $("#approvedOrderId").val();
         
-        //var dataString = "id=" + id + "&supplier=" + supplier + "&cost=" + cost + "&quantity=" + quantity + "&shipping=" + shipping + "&tax=" + tax + "&comments=" + comments;
+        var dataString = "id=" + id //+ "&supplier=" + supplier + "&cost=" + cost + "&quantity=" + quantity + "&shipping=" + shipping + "&tax=" + tax + "&comments=" + comments;
 
         $.ajax({
             type: "POST",
             url: "includes/ajax/addBOM.php",
-            //data: dataString,
+            data: dataString,
             success: function(data) {
                 $('#myModal'+id).modal('hide');
                 var tr = "approvedOrderTr" + id;
