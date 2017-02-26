@@ -91,7 +91,7 @@
                             <option value="0">- Choose Location -</option>
                             <option value="0">EEHQ</option>
                             <option value="1">MEHQ</option>
-                            <option value="2">Chamberlin</option>
+                            <option value="2">Other</option>
                         </select>
                     </div>
                     <div class="col-xs-12 col-md-3">

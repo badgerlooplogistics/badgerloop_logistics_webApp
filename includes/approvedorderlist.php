@@ -32,11 +32,14 @@
                             case 2:
                                 $priority = "2-3 Business Days";
                                 break;
+                            case 3:
+                                $priority = "3-5 Business Days";
+                                break;
                             case 5:
                                 $priority = "Amazon Prime";
                                 break;
-                            default:
-                                $priority = "3-5 Business Days";
+                            //default:
+                            //    $priority = "3-5 Business Days";
                         }
                         if ($item['shipping_location'] == 0) {
                             $shippingLocation = "EEHQ";
@@ -45,7 +48,7 @@
                             $shippingLocation = "MEHQ";
                         
                         } else {
-                            $shippingLocation = "Chamberlin";
+                            $shippingLocation = "Other";
                         }
                         
                         {                    

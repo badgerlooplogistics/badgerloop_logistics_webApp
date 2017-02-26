@@ -91,12 +91,12 @@
                             <option value="3">- Choose Location -</option>
                             <option value="0">EEHQ</option>
                             <option value="1">MEHQ</option>
-                            <option value="2">Chamberlin</option>
+                            <option value="2">Other</option>
                         </select>
                     </div>
                     <div class="col-xs-12 col-md-3">
                         <select class="form-control" id="requestFormPriority">
-                            <option value="4">- Choose Shipping Priority -</option>
+                            <option value="">- Choose Shipping Priority -</option>
                             <option value="1">Overnight</option>
                             <option value="2">2-3 Business Days</option>
                             <option value="3">3-5 Business Days</option>
