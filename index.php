@@ -432,7 +432,7 @@
         var id = $("#approvedOrderId").val();
         
         //var dataString = "id=" + id //+ "&supplier=" + supplier + "&cost=" + cost + "&quantity=" + quantity + "&shipping=" + shipping + "&tax=" + tax + "&comments=" + comments;
-        var dataString = "Test";
+        var dataString = "Testing";
         
         $.ajax({
             type: "POST",
