@@ -110,7 +110,6 @@
                             $system = "Virtual Reality";
                         }
                         }
-                        {
                         
                         $id = $item['id'];
                         echo "<tr id='approvedOrderTr".$request['id']."'>

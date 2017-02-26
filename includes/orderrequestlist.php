@@ -29,16 +29,17 @@
                         switch($request['shipping_priority']) {
                             case 1:
                                 $priority = "Overnight";
-                                //break;
+                                break;
                             case 2:
                                 $priority = "2-3 Business Days";
-                                //break;
+                                break;
                             case 3:
                                 $priority = "3-5 Business Days";
-                                //break;
+                                break;
                             case 5:
                                 $priority = "Amazon Prime";
-                                ///break;
+                                break;
+                        }
                             //default:
                                 //$priority = "3-5 Business Days";
                         /*
@@ -153,6 +154,7 @@
                     echo "</tbody>
                          </table>
                         </div>";
+                    }
                 } else {
                     echo "<p style='text-align:center;'><i>No purchase order requests at this time.</i></p>";
                 }
