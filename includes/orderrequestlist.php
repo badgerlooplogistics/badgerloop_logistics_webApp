@@ -59,7 +59,7 @@
                         }
                         */
                         
-
+                        {
                         if ($request['shipping_location'] == 0) {
                             $shippingLocation = "EEHQ";
                         }
@@ -68,6 +68,7 @@
                         }
                         if ($request['shipping_location'] == 2) {
                             $shippingLocation = "Other";
+                        }
                         }
                         
                         {
@@ -154,7 +155,6 @@
                     echo "</tbody>
                          </table>
                         </div>";
-                    }
                 } else {
                     echo "<p style='text-align:center;'><i>No purchase order requests at this time.</i></p>";
                 }
