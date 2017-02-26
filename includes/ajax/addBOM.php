@@ -3,10 +3,11 @@
 require_once("../database.php");
 session_start();
 
-$value = "BOM Top";
-echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
+//$value = "BOM Top";
+//echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
 
-
+$id = $_POST['id'];
+/*
 $supplier = mysqli_real_escape_string($conn, $_POST['supplier']);
 $cost = mysqli_real_escape_string($conn, $_POST['cost']);
 $quantity = mysqli_real_escape_string($conn, $_POST['quantity']);
@@ -34,15 +35,15 @@ if ($tax == '') {
 
 $id = $_POST['id'];
 
-$value = "BOM Mid";
-echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
+//$value = "BOM Mid";
+//echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
 
 
-
+*/
 $query = "UPDATE financial_package SET status = 3 WHERE id = ".$id;
 mysqli_query($conn, $query);
 
-
+/*
 
 $query = "UPDATE financial_package SET act_supplier = '{$supplier}', act_individual_cost = {$cost}, act_quantity = {$quantity}, shipping = {$shipping}, tax = {$tax}, date_purchased = '{$date}', purchased_by = {$userId}, comments = '{$comments}', status = 3 WHERE id = {$id}";
 mysqli_query($conn, $query);
@@ -73,8 +74,8 @@ $newAmount = $spentTotal + $totalCost;
 $query = "UPDATE teams SET spent_total = {$newAmount} WHERE id={$teamId}";
 mysqli_query($conn, $query);
 
-$value = "BOM Botton";
-echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
+//$value = "BOM Botton";
+//echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
 
 
 
