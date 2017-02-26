@@ -40,6 +40,7 @@
                                 $priority = "Amazon Prime";
                                 break;
                         }
+                        }
                             //default:
                                 //$priority = "3-5 Business Days";
                         
@@ -58,6 +59,7 @@
                             $priority = "Amazon Prime";
                         }
                         */
+                    while($request = mysqli_fetch_assoc($result)) {
                         switch($request['shipping_location']) {
                             case 0:
                                 $shippingLocation = "EEHQ";
@@ -68,6 +70,8 @@
                             case 2:
                                 $shippingLocation = "Other";
                                 break;
+                        }
+                        
                         
                         /*
                         {
