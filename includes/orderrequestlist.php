@@ -47,7 +47,8 @@
                         }
                         if ($request['shipping_location'] == 1) {
                             $shippingLocation = "MEHQ";
-                        } else {
+                        }
+                        if ($request['shipping_location'] == 2) {
                             $shippingLocation = "Other";
                         }
                         
