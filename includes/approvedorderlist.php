@@ -25,6 +25,8 @@
                     <tbody>";
 
                     while($request = mysqli_fetch_assoc($result)) {
+                        {
+                        /*
                         switch($request['shipping_priority']) {
                             case 1:
                                 $priority = "Overnight";
@@ -40,6 +42,20 @@
                                 //break;
                             //default:
                                 //$priority = "3-5 Business Days";
+                        */
+                        {
+                        //}
+                        if ($request['shipping_priority'] == 1) {
+                            $priority = "Overnight";
+                        }
+                        if ($request['shipping_priority'] == 2) {
+                            $priority = "2-3 Business Days";
+                        }
+                        if ($request['shipping_priority'] == 3) {
+                            $priority = "3-5 Business Days";
+                        }
+                        if ($request['shipping_priority'] == 5) {
+                            $priority = "Amazon Prime";
                         }
                     /*
                     while($request = mysqli_fetch_assoc($result)) {
@@ -163,8 +179,8 @@
                    echo "</tbody>
                     </table>
                     </div>";
-            }
-            else {   echo "<p style='text-align: center;'><i>No approved orders at this time.</i></p>";   }
+
+            } else {   echo "<p style='text-align: center;'><i>No approved orders at this time.</i></p>";   }
             ?>
         </div>
     </div>

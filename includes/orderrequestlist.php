@@ -26,6 +26,7 @@
                             <tbody>";
                     
                     while($request = mysqli_fetch_assoc($result)) {
+                        /*
                         switch($request['shipping_priority']) {
                             case 1:
                                 $priority = "Overnight";
@@ -41,7 +42,26 @@
                                 ///break;
                             //default:
                                 //$priority = "3-5 Business Days";
+                            */
+                        
                         }
+                        if ($request['shipping_priority'] == 1) {
+                            $priority = "Overnight";
+                        }
+                        if ($request['shipping_priority'] == 2) {
+                            $priority = "2-3 Business Days";
+                        }
+                        if ($request['shipping_priority'] == 3) {
+                            $priority = "3-5 Business Days";
+                        }
+                        if ($request['shipping_priority'] == 5) {
+                            $priority = "Amazon Prime";
+                        }
+                        
+                        
+                        
+                        
+
                         if ($request['shipping_location'] == 0) {
                             $shippingLocation = "EEHQ";
                         }
@@ -131,7 +151,7 @@
 
                                     </div>
                                 </div>";
-                    }
+                    
 
                     echo "</tbody>
                          </table>
