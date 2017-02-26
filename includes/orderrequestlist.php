@@ -40,40 +40,8 @@
                                 $priority = "Amazon Prime";
                                 break;
                         }
-                        }
-                            //default:
-                                //$priority = "3-5 Business Days";
-                        
-                        /*    
-                        }
-                        if ($request['shipping_priority'] == 1) {
-                            $priority = "Overnight";
-                        }
-                        if ($request['shipping_priority'] == 2) {
-                            $priority = "2-3 Business Days";
-                        }
-                        if ($request['shipping_priority'] == 3) {
-                            $priority = "3-5 Business Days";
-                        }
-                        if ($request['shipping_priority'] == 5) {
-                            $priority = "Amazon Prime";
-                        }
-                        */
-                    while($request = mysqli_fetch_assoc($result)) {
-                        switch($request['shipping_location']) {
-                            case 0:
-                                $shippingLocation = "EEHQ";
-                                break;
-                            case 1:
-                                $shippingLocation = "MEHQ";
-                                break;
-                            case 2:
-                                $shippingLocation = "Other";
-                                break;
-                        }
                         
                         
-                        /*
                         {
                         if ($item['shipping_location'] == 0) {
                             $shippingLocation = "EEHQ";
@@ -85,7 +53,6 @@
                             $shippingLocation = "Other";
                         }
                         
-                        */
                         
                         {                    
                         if ($request['system'] == 1) {
@@ -164,14 +131,14 @@
                                         </div>
                                     </div>
                                 </div>";
-}
-                    }                    
+                    } 
+                    }
                     echo "</tbody>
                          </table>
                         </div>";
                    // } 
-                }//closes 1st if
-                else{
+                //}//closes 1st if
+                }else{
                     echo "<p style='text-align:center;'><i>No purchase order requests at this time.</i></p>";
                 }//closes else
             ?>
