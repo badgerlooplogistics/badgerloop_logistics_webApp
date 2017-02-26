@@ -25,26 +25,24 @@
                     <tbody>";
 
                     while($request = mysqli_fetch_assoc($result)) {
-                        {
-                        /*
                         switch($request['shipping_priority']) {
                             case 1:
                                 $priority = "Overnight";
-                                //break;
+                                break;
                             case 2:
                                 $priority = "2-3 Business Days";
-                                //break;
+                                break;
                             case 3:
                                 $priority = "3-5 Business Days";
-                                //break;
+                                break;
                             case 5:
                                 $priority = "Amazon Prime";
-                                //break;
+                                break;
                             //default:
                                 //$priority = "3-5 Business Days";
-                        */
-                        {
-                        //}
+                        
+                        /*    
+                        }
                         if ($request['shipping_priority'] == 1) {
                             $priority = "Overnight";
                         }
@@ -57,21 +55,7 @@
                         if ($request['shipping_priority'] == 5) {
                             $priority = "Amazon Prime";
                         }
-                    /*
-                    while($request = mysqli_fetch_assoc($result)) {
-                        switch($request['shipping_location']) {
-                            case 1:
-                                $shippingLocation = "Overnight";
-                                break;
-                            case 2:
-                                $shippingLocation = "2-3 Business Days";
-                                break;
-                            case 3:
-                                $shippingLocation = "3-5 Business Days";
-                                break;
-                        }
                         */
-                  
                         }
                         if ($item['shipping_location'] == 0) {
                             $shippingLocation = "EEHQ";
