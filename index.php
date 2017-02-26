@@ -432,7 +432,7 @@
         var id = $("#approvedOrderId").val();
         
         //var dataString = "id=" + id //+ "&supplier=" + supplier + "&cost=" + cost + "&quantity=" + quantity + "&shipping=" + shipping + "&tax=" + tax + "&comments=" + comments;
-        var dataString = "Test"
+        var dataString = "Test";
         
         $.ajax({
             type: "POST",
@@ -440,8 +440,8 @@
             data: dataString,
             success: function(data) {
                 $('#myModal'+id).modal('hide');
-                //var tr = "approvedOrderTr" + id;
-                //$("#"+tr).hide("fade");
+                var tr = "approvedOrderTr" + id;
+                $("#"+tr).hide("fade");
                 console.log(data);
             },
             error: function(data) {
