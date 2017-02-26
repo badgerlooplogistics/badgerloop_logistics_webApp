@@ -58,6 +58,18 @@
                             $priority = "Amazon Prime";
                         }
                         */
+                        switch($request['shipping_location']) {
+                            case 0:
+                                $shippingLocation = "EEHQ";
+                                break;
+                            case 1:
+                                $shippingLocation = "MEHQ";
+                                break;
+                            case 2:
+                                $shippingLocation = "Other";
+                                break;
+                        
+                        /*
                         {
                         if ($item['shipping_location'] == 0) {
                             $shippingLocation = "EEHQ";
@@ -69,7 +81,7 @@
                             $shippingLocation = "Other";
                         }
                         
-                        
+                        */
                         
                         {                    
                         if ($request['system'] == 1) {
