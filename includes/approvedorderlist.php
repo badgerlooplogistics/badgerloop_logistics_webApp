@@ -87,6 +87,7 @@
                         }
                         if ($request['system'] == 12) {
                             $system = "Suspension and Stability";
+                        }
                         if ($request['system'] == 13) {
                             $system = "Virtual Reality";
                         }
