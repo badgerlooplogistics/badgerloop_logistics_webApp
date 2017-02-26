@@ -1,7 +1,7 @@
 <?php
 
 require_once("../database.php");
-//session_start(); // here
+session_start(); // here
 
 //$value = "BOM Top";
 //echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
@@ -39,11 +39,11 @@ $id = $_POST['id'];
 //echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
 
 
-*/
+
 $query = "UPDATE financial_package SET status = 3 WHERE id = ".$id;
 mysqli_query($conn, $query);
 
-/*
+
 
 $query = "UPDATE financial_package SET act_supplier = '{$supplier}', act_individual_cost = {$cost}, act_quantity = {$quantity}, shipping = {$shipping}, tax = {$tax}, date_purchased = '{$date}', purchased_by = {$userId}, comments = '{$comments}', status = 3 WHERE id = {$id}";
 mysqli_query($conn, $query);

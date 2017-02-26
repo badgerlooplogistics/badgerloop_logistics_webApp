@@ -423,16 +423,16 @@
 
     $("#addBOMButton").click(function() {
         //console.log("Add to BOM button");
-        //var supplier = $("#approvedOrderSupplier").val();
-        //var cost = $("#approvedOrderCost").val();
-        //var quantity = $("#approvedOrderQuantity").val();
-        //var shipping = $("#approvedOrderShipping").val();
-        //var tax = $("#approvedOrderTax").val();
-        //var comments = $("#approvedOrderComments").val();
+        var supplier = $("#approvedOrderSupplier").val();
+        var cost = $("#approvedOrderCost").val();
+        var quantity = $("#approvedOrderQuantity").val();
+        var shipping = $("#approvedOrderShipping").val();
+        var tax = $("#approvedOrderTax").val();
+        var comments = $("#approvedOrderComments").val();
         var id = $("#approvedOrderId").val();
         
-        //var dataString = "id=" + id //+ "&supplier=" + supplier + "&cost=" + cost + "&quantity=" + quantity + "&shipping=" + shipping + "&tax=" + tax + "&comments=" + comments;
-        var dataString = "Testing";
+        var dataString = "id=" + id + "&supplier=" + supplier + "&cost=" + cost + "&quantity=" + quantity + "&shipping=" + shipping + "&tax=" + tax + "&comments=" + comments;
+        //var dataString = "Testing";
         
         $.ajax({
             type: "POST",
