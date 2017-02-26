@@ -39,7 +39,7 @@
                                 $priority = "Amazon Prime";
                                 break;
                             //default:
-                            //    $priority = "3-5 Business Days";
+                                //$priority = "3-5 Business Days";
                         }
                         if ($item['shipping_location'] == 0) {
                             $shippingLocation = "EEHQ";
@@ -87,7 +87,7 @@
                         }
                         if ($request['system'] == 12) {
                             $system = "Suspension and Stability";
-                        } else {
+                        if ($request['system'] == 13) {
                             $system = "Virtual Reality";
                         }
                         }
