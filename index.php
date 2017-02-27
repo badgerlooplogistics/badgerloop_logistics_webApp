@@ -422,7 +422,7 @@
     });
 
     $("#addBOMButton").click(function() {
-        //console.log("Add to BOM button");
+        console.log("Add to BOM button");
         var supplier = $("#approvedOrderSupplier").val();
         var cost = $("#approvedOrderCost").val();
         var quantity = $("#approvedOrderQuantity").val();
