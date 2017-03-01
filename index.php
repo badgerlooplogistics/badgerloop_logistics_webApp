@@ -388,10 +388,12 @@
             url: "includes/ajax/requestListApprove.php",
             data: dataString,
             success: function(data) {
+                console.log(data);
                 var tr = "requestListTr" + requestId;
                 $("#"+tr).hide("fade");
             },
             error: function(data) {
+                console.log(data);
 
             }
         });
