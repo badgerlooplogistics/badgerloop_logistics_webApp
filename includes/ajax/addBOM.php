@@ -1,7 +1,7 @@
 <?php
 
 require_once("../database.php");
-session_start(); // here
+//session_start(); // here
 
 //$value = "BOM Top";
 //echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
