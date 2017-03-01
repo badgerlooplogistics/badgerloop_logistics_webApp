@@ -1,20 +1,21 @@
 <?php
 
+//This file works. $id = (some integer)
+
 require_once("../database.php");
 
 $id = $_POST['id'];
+
 echo "<script type=\"text/javascript\">console.log(\"".$id."\")</script>";
 
-$value = "Hi";
-echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
-echo "Hi";
 
 $query = "UPDATE financial_package SET status = 1 WHERE id = ".$id;
 mysqli_query($conn, $query);
 
-$value = "Hi";
-echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
-echo "Hi";
+//echo "<script type=\"text/javascript\">console.log(\"".$id."\")</script>";
+//$value = "Hi";
+//echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
+
 
 /*
 $purchasers_name = "Elon Musk";

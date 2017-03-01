@@ -435,7 +435,7 @@
         
         var dataString = "id=" + id + "&supplier=" + supplier + "&cost=" + cost + "&quantity=" + quantity + "&shipping=" + shipping + "&tax=" + tax + "&comments=" + comments;
         //var dataString = "Testing";
-        
+        console.log(dataString)
         $.ajax({
             type: "POST",
             url: "includes/ajax/addBOM.php",
