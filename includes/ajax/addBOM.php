@@ -55,12 +55,15 @@ $result = mysqli_query($conn, $query);
 $userTeam = mysqli_fetch_assoc($result);
 $teamId = $userTeam['team_id'];
 
-echo '<script>console.log("Middle")</script>';
+//echo '<script>console.log("Middle")</script>';
 $query = "SELECT spent_total FROM teams WHERE id = {$teamId}";
 $result = mysqli_query($conn, $query);
 $team = mysqli_fetch_assoc($result);
 $spentTotal = $team['spent_total'];
 
+echo "<script type=\"text/javascript\">console.log(\"".$team."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$userTeam."\")</script>";
+echo "hi";
 
 // calculate total cost
 $totalCost = $cost*$quantity + $shipping + $tax;
@@ -70,8 +73,6 @@ $query = "UPDATE teams SET spent_total = {$newAmount} WHERE id={$teamId}";
 mysqli_query($conn, $query);
 
 //$value = "BOM Botton";
-echo "<script type=\"text/javascript\">console.log(\"".$team."\")</script>";
-echo "<script type=\"text/javascript\">console.log(\"".$userTeam."\")</script>";
 
 
 

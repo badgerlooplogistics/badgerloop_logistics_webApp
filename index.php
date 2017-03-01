@@ -442,10 +442,10 @@
                 $('#myModal'+id).modal('hide');
                 var tr = "approvedOrderTr" + id;
                 $("#"+tr).hide("fade");
-                console.log(data);
+                //console.log(data);
             },
             error: function(data) {
-            console.log(data);
+            //console.log(data);
             }
         });
         //console.log("Add to BOM button1");
