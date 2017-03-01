@@ -3,6 +3,7 @@
 require_once("../database.php");
 
 $id = $_POST['id'];
+echo "<script type=\"text/javascript\">console.log(\"".$id."\")</script>";
 
 
 $query = "UPDATE financial_package SET status = 1 WHERE id = ".$id;
