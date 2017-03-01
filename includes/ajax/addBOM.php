@@ -17,7 +17,7 @@ $date = date('Y-m-d', time());
 $id = $_POST['id'];
 $userId = $_SESSION['user'];
 
-
+/*
 if ($cost == '') {
     $cost = 0;
 }
@@ -30,7 +30,7 @@ if ($shipping == '') {
 if ($tax == '') {
     $tax = 0;
 }
-
+*/
 
 $id = $_POST['id'];
 
