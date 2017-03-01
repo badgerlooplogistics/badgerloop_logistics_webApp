@@ -28,8 +28,8 @@
             <br />
             <div class="panel-group" id="teamAccordion">
                 <?php
-                $value = "bom kinda mid";
-                echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
+                //$value = "bom kinda mid";
+                //echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
                 $query = "SELECT * FROM teams ORDER BY list_order";
                 $result = mysqli_query($conn, $query);
                 while($team = mysqli_fetch_assoc($result)) {
@@ -61,7 +61,7 @@
                                             <tbody>
                                                 <tr>
                                                     <td>".money_format('$%i ',$team['bom_total'])."</td>
-                                                    <td>".money_format('$%i ',$team['spent_total'])."</td>
+                                                    <td>".money_format('$%i ',$request['spent_total'])."</td>
                                                     <td><meter value='".$meterVal."'></meter></td>
                                                 </tr>
                                             </tbody>
@@ -149,7 +149,4 @@
         </div>
     </div>
 </div>
-<?php
-$value = "bom kinda mid";
-echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
-?>
+
