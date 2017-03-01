@@ -63,7 +63,7 @@ $spentTotal = $team['spent_total'];
 
 echo "<script type=\"text/javascript\">console.log(\"".$team."\")</script>";
 echo "<script type=\"text/javascript\">console.log(\"".$userTeam."\")</script>";
-echo "hi";
+
 
 // calculate total cost
 $totalCost = $cost*$quantity + $shipping + $tax;
@@ -71,9 +71,5 @@ $newAmount = $spentTotal + $totalCost;
 
 $query = "UPDATE teams SET spent_total = {$newAmount} WHERE id={$teamId}";
 mysqli_query($conn, $query);
-
-//$value = "BOM Botton";
-
-
 
 ?>
