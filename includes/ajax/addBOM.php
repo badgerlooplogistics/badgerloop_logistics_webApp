@@ -61,8 +61,8 @@ $result = mysqli_query($conn, $query);
 $team = mysqli_fetch_assoc($result);
 $spentTotal = $team['spent_total'];
 
+
 echo "<script type=\"text/javascript\">console.log(\"".$team."\")</script>";
-echo "<script type=\"text/javascript\">console.log(\"".$userTeam."\")</script>";
 
 
 // calculate total cost
@@ -72,4 +72,7 @@ $newAmount = $spentTotal + $totalCost;
 $query = "UPDATE teams SET spent_total = {$newAmount} WHERE id={$teamId}";
 mysqli_query($conn, $query);
 
+
+echo "<script type=\"text/javascript\">console.log(\"".$team."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$userTeam."\")</script>";
 ?>
