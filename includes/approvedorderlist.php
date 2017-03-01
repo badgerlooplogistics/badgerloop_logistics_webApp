@@ -112,7 +112,7 @@
                         }
                         }
                         
-                        $id = $request['id'];
+                        $id = $item['id'];
                         echo "<tr id='approvedOrderTr".$request['id']."'>
                                 <td>".$request['item']."</td>
                                 <td>".date_format(date_create($request['date_added']), 'm/d/Y')."</td>
