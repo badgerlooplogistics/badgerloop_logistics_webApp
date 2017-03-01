@@ -14,7 +14,7 @@ $shipping = mysqli_real_escape_string($conn, $_POST['shipping']);
 $tax = mysqli_real_escape_string($conn, $_POST['tax']);
 $comments = mysqli_real_escape_string($conn, $_POST['comments']);
 $date = date('Y-m-d', time());
-$id = $_POST['id'];
+//$id = $_POST['id'];
 $userId = $_SESSION['user'];
 
 
@@ -32,7 +32,7 @@ if ($tax == '') {
 }
 
 
-$id = $_POST['id'];
+//$id = $_POST['id'];
 
 //$value = "BOM Mid";
 //echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
@@ -61,9 +61,9 @@ $result = mysqli_query($conn, $query);
 $team = mysqli_fetch_assoc($result);
 $spentTotal = $team['spent_total'];
 
+echo "<script type=\"text/javascript\">console.log(\"".$tax."\")</script>";
 echo "<script type=\"text/javascript\">console.log(\"".$id."\")</script>";
-echo "<script type=\"text/javascript\">console.log(\"".$team."\")</script>";
-echo "<script type=\"text/javascript\">console.log(\"".$userTeam."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$userId."\")</script>";
 
 
 // calculate total cost
