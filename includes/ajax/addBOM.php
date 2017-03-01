@@ -6,7 +6,7 @@ session_start(); // here
 //$value = "BOM Top";
 //echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
 
-$id = $_POST['id'];
+$id = $_GET['id'];
 $supplier = mysqli_real_escape_string($conn, $_POST['supplier']);
 $cost = mysqli_real_escape_string($conn, $_POST['cost']);
 $quantity = mysqli_real_escape_string($conn, $_POST['quantity']);
