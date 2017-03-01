@@ -60,16 +60,16 @@ $result = mysqli_query($conn, $query);
 $team = mysqli_fetch_assoc($result);
 $spentTotal = $team['spent_total'];
 
-echo "<script type=\"text/javascript\">console.log(\"".$comments."\")</script>";
-echo "<script type=\"text/javascript\">console.log(\"".$id."\")</script>";
-echo "<script type=\"text/javascript\">console.log(\"".$date."\")</script>";
+//echo "<script type=\"text/javascript\">console.log(\"".$comments."\")</script>";
+//echo "<script type=\"text/javascript\">console.log(\"".$id."\")</script>";
+//echo "<script type=\"text/javascript\">console.log(\"".$date."\")</script>";
 
 
 // calculate total cost
 $totalCost = $cost*$quantity + $shipping + $tax;
 $newAmount = $spentTotal + $totalCost;
 
-echo "<script type=\"text/javascript\">console.log(\"".$cst."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$cost."\")</script>";
 echo "<script type=\"text/javascript\">console.log(\"".$quantity."\")</script>";
 echo "<script type=\"text/javascript\">console.log(\"".$shipping."\")</script>";
 echo "<script type=\"text/javascript\">console.log(\"".$tax."\")</script>";
