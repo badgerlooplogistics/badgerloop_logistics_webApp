@@ -17,7 +17,7 @@ $date = date('Y-m-d', time());
 $id = $_POST['id'];
 $userId = $_SESSION['user'];
 
-/*
+
 if ($cost == '') {
     $cost = 0;
 }
@@ -30,7 +30,7 @@ if ($shipping == '') {
 if ($tax == '') {
     $tax = 0;
 }
-*/
+
 
 $id = $_POST['id'];
 
@@ -62,7 +62,8 @@ $team = mysqli_fetch_assoc($result);
 $spentTotal = $team['spent_total'];
 
 
-//echo "<script type=\"text/javascript\">console.log(\"".$team."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$team."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$userTeam."\")</script>";
 
 
 // calculate total cost
@@ -73,6 +74,6 @@ $query = "UPDATE teams SET spent_total = {$newAmount} WHERE id={$teamId}";
 mysqli_query($conn, $query);
 
 
-echo "<script type=\"text/javascript\">console.log(\"".$team."\")</script>";
-echo "<script type=\"text/javascript\">console.log(\"".$userTeam."\")</script>";
+//echo "<script type=\"text/javascript\">console.log(\"".$team."\")</script>";
+//echo "<script type=\"text/javascript\">console.log(\"".$userTeam."\")</script>";
 ?>
