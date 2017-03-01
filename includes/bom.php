@@ -83,7 +83,7 @@
                     while($item = mysqli_fetch_assoc($resultItems)) {
                         echo "<tr>
                                                             <td>".$item['item']."</td>
-                                                            <td>".$request['system']."</td>
+                                                            <td>".$item['system']."</td>
                                                             <td>".$item['act_supplier']."</td>
                                                             <td>".date_format(date_create($item['date_added']), 'm/d/Y')."</td>
                                                             <td><button type=\"button\" class=\"btn enquireItem\" data-toggle=\"modal\" data-target=\"#myModal".$item['id']."\"><span class='glyphicon glyphicon-search'></span></button></td>
