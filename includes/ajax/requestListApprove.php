@@ -7,6 +7,7 @@ echo "<script type=\"text/javascript\">console.log(\"".$id."\")</script>";
 
 $value = "Hi";
 echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
+echo "Hi";
 
 $query = "UPDATE financial_package SET status = 1 WHERE id = ".$id;
 mysqli_query($conn, $query);
