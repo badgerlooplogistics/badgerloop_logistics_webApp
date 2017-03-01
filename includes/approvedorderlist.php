@@ -131,7 +131,7 @@
                                             <div class=\"modal-body\">
                                                 <p style='color:black;'>
                                                     Item: ".$request['item']."<br />
-                                                    System: ".$request['system']."<br />
+                                                    System: ".$item['system']."<br />
                                                     Item Description: " .$request['item_disc'] ."<br />
                                                     Date Added: " . date_format(date_create($request['date_added']), 'm/d/Y') . "<br />
                                                     BOM Supplier: <a href='" . $request['link'] . "' target='_blank'>" . $request['bom_supplier'] . "</a><br />
