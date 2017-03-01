@@ -39,7 +39,7 @@
                     */
                     if($team['bom_total'] == 0){
                         $meterVal = $team['spent_total'] / 1;
-                        echo "<script type=\"text/javascript\">console.log(\"".$tax."\")</script>";
+                        echo "<script type=\"text/javascript\">console.log(\"".$meterVal."\")</script>";
                     }
                     else{
                         $meterVal = $team['spent_total']/$team['bom_total'];
