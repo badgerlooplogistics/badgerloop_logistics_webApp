@@ -61,7 +61,7 @@
                                             <tbody>
                                                 <tr>
                                                     <td>".money_format('$%i ',$team['bom_total'])."</td>
-                                                    <td>".money_format('$%i ',$request['spent_total'])."</td>
+                                                    <td>".money_format('$%i ',$team['spent_total'])."</td>
                                                     <td><meter value='".$meterVal."'></meter></td>
                                                 </tr>
                                             </tbody>
