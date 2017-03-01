@@ -1,14 +1,11 @@
 <?php
 
-// This is the broken button. $id = nothing
+// This is the NO LONGER broken button. $id = nothing
 
 require_once("../database.php");
-session_start(); // here
+session_start();
 
 $id = $_POST['id'];
-echo "<script type=\"text/javascript\">console.log(\"".$id."\")</script>";
-
-
 $supplier = mysqli_real_escape_string($conn, $_POST['supplier']);
 $cost = mysqli_real_escape_string($conn, $_POST['cost']);
 $quantity = mysqli_real_escape_string($conn, $_POST['quantity']);
@@ -71,6 +68,11 @@ echo "<script type=\"text/javascript\">console.log(\"".$date."\")</script>";
 // calculate total cost
 $totalCost = $cost*$quantity + $shipping + $tax;
 $newAmount = $spentTotal + $totalCost;
+
+echo "<script type=\"text/javascript\">console.log(\"".$id."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$totalCost."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$newAmount."\")</script>";
+
 
 $query = "UPDATE teams SET spent_total = {$newAmount} WHERE id={$teamId}";
 mysqli_query($conn, $query);
