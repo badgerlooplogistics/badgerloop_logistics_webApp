@@ -96,7 +96,7 @@
                     </div>
                     <div class="col-xs-12 col-md-3">
                         <select class="form-control" id="requestFormPriority">
-                            <option value="">- Choose Shipping Priority -</option>
+                            <option value="4">- Choose Shipping Priority -</option>
                             <option value="1">Overnight</option>
                             <option value="2">2-3 Business Days</option>
                             <option value="3">3-5 Business Days</option>
