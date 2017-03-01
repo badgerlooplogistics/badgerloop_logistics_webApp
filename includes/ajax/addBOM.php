@@ -1,5 +1,6 @@
 <?php
 
+session_start(); // here
 require_once("../database.php");
 //session_start(); // here
 
