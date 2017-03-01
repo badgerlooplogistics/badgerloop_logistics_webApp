@@ -61,9 +61,9 @@ $result = mysqli_query($conn, $query);
 $team = mysqli_fetch_assoc($result);
 $spentTotal = $team['spent_total'];
 
-echo "<script type=\"text/javascript\">console.log(\"".$tax."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$comments."\")</script>";
 echo "<script type=\"text/javascript\">console.log(\"".$id."\")</script>";
-echo "<script type=\"text/javascript\">console.log(\"".$userId."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$date."\")</script>";
 
 
 // calculate total cost
