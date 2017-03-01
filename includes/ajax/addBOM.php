@@ -70,7 +70,8 @@ $query = "UPDATE teams SET spent_total = {$newAmount} WHERE id={$teamId}";
 mysqli_query($conn, $query);
 
 //$value = "BOM Botton";
-//echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$team."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$userTeam."\")</script>";
 
 
 
