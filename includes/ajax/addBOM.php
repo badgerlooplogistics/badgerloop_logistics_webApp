@@ -69,9 +69,10 @@ echo "<script type=\"text/javascript\">console.log(\"".$date."\")</script>";
 $totalCost = $cost*$quantity + $shipping + $tax;
 $newAmount = $spentTotal + $totalCost;
 
-echo "<script type=\"text/javascript\">console.log(\"".$id."\")</script>";
-echo "<script type=\"text/javascript\">console.log(\"".$totalCost."\")</script>";
-echo "<script type=\"text/javascript\">console.log(\"".$newAmount."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$cst."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$quantity."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$shipping."\")</script>";
+echo "<script type=\"text/javascript\">console.log(\"".$tax."\")</script>";
 
 
 $query = "UPDATE teams SET spent_total = {$newAmount} WHERE id={$teamId}";
