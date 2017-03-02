@@ -16,13 +16,14 @@ $date = date('Y-m-d', time());
 //$id = $_POST['id'];
 $userId = $_SESSION['user'];
 
-
+/*
 if ($cost == '') {
     $cost = 0;
 }
 if ($quantity == '') {
     $quantity = 0;
 }
+*/
 if ($shipping == '') {
     $shipping = 0;
 }
