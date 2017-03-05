@@ -53,7 +53,7 @@
                             $shippingLocation = "Other";
                         }
                         
-                        
+                        /*
                         {                    
                         if ($request['system'] == 1) {
                             $system = "Administration";
@@ -94,6 +94,7 @@
                         if ($request['system'] == 13) {
                             $system = "Virtual Reality";
                         }
+                        */
                         }
                     
                         echo "<tr id='requestListTr".$request['id']."'>
