@@ -314,7 +314,7 @@
                     } else {
                         $("#failureMessagePOR").show("fade");
                         console.log(data);
-                        console.log(datastring);
+                        console.log(dataString);
                     }
                 },
                 error: function (data) {
