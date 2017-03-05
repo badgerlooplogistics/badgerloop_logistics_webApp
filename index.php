@@ -314,6 +314,7 @@
                     } else {
                         $("#failureMessagePOR").show("fade");
                         console.log(data);
+                        console.log(datastring);
                     }
                 },
                 error: function (data) {
