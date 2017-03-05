@@ -300,6 +300,7 @@
                 data: dataString,
                 success: function (data) {
                     if (data == "success") {
+                        console.log(data);
                         $("#successMessagePOR").show("fade");
                         $("#requestFormItem").val("");
                         $("#requestFormSystem").val("");
@@ -312,10 +313,12 @@
                         $("#requestFormLink").val("");
                     } else {
                         $("#failureMessagePOR").show("fade");
+                        console.log(data);
                     }
                 },
                 error: function (data) {
                     alert("error");
+                    console.log(data);
                 }
             });
         }
@@ -435,7 +438,7 @@
         
         var dataString = "id=" + id + "&supplier=" + supplier + "&cost=" + cost + "&quantity=" + quantity + "&shipping=" + shipping + "&tax=" + tax + "&comments=" + comments;
         //var dataString = "Testing";
-        console.log(dataString)
+        console.log(dataString);
         $.ajax({
             type: "POST",
             url: "includes/ajax/addBOM.php",

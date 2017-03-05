@@ -12,10 +12,6 @@ echo "<script type=\"text/javascript\">console.log(\"".$id."\")</script>";
 $query = "UPDATE financial_package SET status = 1 WHERE id = ".$id;
 mysqli_query($conn, $query);
 
-//echo "<script type=\"text/javascript\">console.log(\"".$id."\")</script>";
-//$value = "Hi";
-//echo "<script type=\"text/javascript\">console.log(\"".$value."\")</script>";
-
 
 /*
 $purchasers_name = "Elon Musk";

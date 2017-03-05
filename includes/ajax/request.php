@@ -5,6 +5,7 @@ date_default_timezone_set('America/Chicago');
 
 $item = mysqli_real_escape_string($conn, $_POST['item']);
 $system = mysqli_real_escape_string($conn, $_POST['system']);
+echo "<script type=\"text/javascript\">console.log(\"".$system."\")</script>";
 $desc = mysqli_real_escape_string($conn, $_POST['desc']);
 $supplier = mysqli_real_escape_string($conn, $_POST['supplier']);
 $quantity = mysqli_real_escape_string($conn, $_POST['quantity']);
@@ -69,4 +70,5 @@ if($result === false)
 }
  
 curl_close($ch);
+
 
