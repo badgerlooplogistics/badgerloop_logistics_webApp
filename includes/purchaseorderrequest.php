@@ -42,18 +42,18 @@
                         <select id="requestFormSystem" class="form-control" placeholder="System">
                             <option value="">- Choose System -</option>
                             <option value="1">Administration</option>
-                            <option value="Batteries">Batteries</option>
-                            <option value="Braking">Braking</option>
-                            <option value="Composites">Composites</option>
-                            <option value="Controls">Controls</option>
-                            <option value="Electronics">Electronics</option>
-                            <option value="Fabrication">Fabrication</option>
-                            <option value="Propulsion">Propulsion</option>
-                            <option value="Software">Software</option>
-                            <option value="Structural Analysis">Structural Analysis</option>
-                            <option value="Structural Design">Structural Design</option>
-                            <option value="Suspension and Stability">Suspension and Stability</option>
-                            <option value="Virtual Reality">Virtual Reality</option>
+                            <option value="2">Batteries</option>
+                            <option value="3">Braking</option>
+                            <option value="4">Composites</option>
+                            <option value="5">Controls</option>
+                            <option value="6">Electronics</option>
+                            <option value="7">Fabrication</option>
+                            <option value="8">Propulsion</option>
+                            <option value="9">Software</option>
+                            <option value="10">Structural Analysis</option>
+                            <option value="11">Structural Design</option>
+                            <option value="12">Suspension and Stability</option>
+                            <option value="13">Virtual Reality</option>
                         </select>
                     </div>
                     <div class="col-xs-0 col-md-3">
