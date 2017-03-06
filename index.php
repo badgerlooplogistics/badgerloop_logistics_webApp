@@ -287,7 +287,7 @@
             if (cost == "") {
                 $("#requestFormCost").css("border", "2px solid red");
             }
-            //$("#failureMessagePOR").show("fade");
+            $("#failureMessagePOR").show("fade");
         } else {
             var dataString = "item=" + item + "&system=" + system + "&desc=" + desc + "&supplier=" + supplier + "&quantity=" + quantity + "&cost=" + cost + "&priority=" + priority + "&user=" + user  + "&link=" + link + "&location=" + location;
             $("#failureMessagePOR").hide("fade");
@@ -312,7 +312,7 @@
                         $("#requestFormLocation").val("0");
                         $("#requestFormLink").val("");
                     } else {
-                        $("#failureMessagePOR").show("fade");
+                        $("#successMessagePOR").show("fade");
                         console.log(data);
                         console.log(dataString);
                     }
