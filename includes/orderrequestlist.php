@@ -52,8 +52,9 @@
                         if ($request['shipping_location'] == 2) {
                             $shippingLocation = "Other";
                         }
-                        }
+                        
                         /*
+                        }
                         {                   
                         if ($request['system'] == 1) {
                             $system = "Administration";
