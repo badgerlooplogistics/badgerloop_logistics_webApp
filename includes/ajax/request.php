@@ -38,6 +38,7 @@ if (mysqli_affected_rows($conn) > 0) {
 } else {
     echo "fail";
 };
+echo "Affected rows: " . mysqli_affected_rows($conn);
 
 /*
 $purchasers_name = "Elon Musk";
