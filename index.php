@@ -301,6 +301,7 @@
                 success: function (data) {
                     if (data == "success") {
                         console.log(data);
+                        console.log(url);
                         $("#successMessagePOR").show("fade");
                         $("#requestFormItem").val("");
                         $("#requestFormSystem").val("");
@@ -313,6 +314,7 @@
                         $("#requestFormLink").val("");
                     } else {
                         $("#failureMessagePOR").show("fade");
+                        console.log(url);
                         console.log(data);
                         console.log(dataString);
                     }
