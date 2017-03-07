@@ -42,21 +42,6 @@
                             //default:
                                 //$priority = "3-5 Business Days";
                         
-                        /*    
-                        }
-                        if ($request['shipping_priority'] == 1) {
-                            $priority = "Overnight";
-                        }
-                        if ($request['shipping_priority'] == 2) {
-                            $priority = "2-3 Business Days";
-                        }
-                        if ($request['shipping_priority'] == 3) {
-                            $priority = "3-5 Business Days";
-                        }
-                        if ($request['shipping_priority'] == 5) {
-                            $priority = "Amazon Prime";
-                        }
-                        */
                         {
                         if ($item['shipping_location'] == 0) {
                             $shippingLocation = "EEHQ";
@@ -69,7 +54,7 @@
                         }
                         
                         
-                        
+                        /*
                         {                    
                         if ($request['system'] == 1) {
                             $system = "Administration";
@@ -110,6 +95,7 @@
                         if ($request['system'] == 13) {
                             $system = "Virtual Reality";
                         }
+                        */
                         }
                         echo "<script type=\"text/javascript\">console.log(\"".$shipping_priority."\")</script>";
                         echo "<script type=\"text/javascript\">console.log(\"".$shippingLocation."\")</script>";
