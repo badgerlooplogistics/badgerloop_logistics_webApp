@@ -52,8 +52,8 @@
                         if ($request['shipping_location'] == 2) {
                             $shippingLocation = "Other";
                         }
-                        
-                        
+                        }
+                        /*
                         {                   
                         if ($request['system'] == 1) {
                             $system = "Administration";
@@ -94,7 +94,7 @@
                         if ($request['system'] == 13) {
                             $system = "Virtual Reality";
                         }
-                        
+                        */
                         }
                     
                         echo "<tr id='requestListTr".$request['id']."'>
@@ -117,7 +117,7 @@
                                                 <p style='color:black;'>
                                                     Requested By: ".$request['user_id']."<br />
                                                     Item: ".$request['item']."<br />
-                                                    System: ".$system."<br />
+                                                    System: ".$request['system']."<br />
                                                     Item Description: ".$request['item_disc']."<br />
                                                     Date Added: ".date_format(date_create($request['date_added']), 'm/d/Y')."<br />
                                                     BOM Supplier: <a href='".$request['link']."' target='_blank'>".$request['bom_supplier']."</a><br />
