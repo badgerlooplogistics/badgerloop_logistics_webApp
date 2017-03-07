@@ -304,7 +304,6 @@
                         console.log(data);
                         $("#successMessagePOR").show("fade");
                         $("#requestFormItem").val("");
-                        console.log("#requestFormItem".val(""));
                         $("#requestFormSystem").val("");
                         $("#requestFormDesc").val("");
                         $("#requestFormSupplier").val("");
@@ -315,7 +314,6 @@
                         $("#requestFormLink").val("");
                     } else {
                         $("#failureMessagePOR").show("fade");
-                        console.log("#requestFormItem".val(""));
                         console.log(data);
                         console.log(dataString);
                     }
