@@ -266,7 +266,7 @@
     
 
     $("#requestFormSubmit").click(function() {
-        console.log('hi')
+        console.log('hi');
         var item = $("#requestFormItem").val();
         var system = $("#requestFormSystem").val();
         var desc = $("#requestFormDesc").val();
@@ -304,6 +304,7 @@
                         console.log(data);
                         $("#successMessagePOR").show("fade");
                         $("#requestFormItem").val("");
+                        console.log("#requestFormItem".val(""));
                         $("#requestFormSystem").val("");
                         $("#requestFormDesc").val("");
                         $("#requestFormSupplier").val("");
@@ -314,6 +315,7 @@
                         $("#requestFormLink").val("");
                     } else {
                         $("#failureMessagePOR").show("fade");
+                        console.log("#requestFormItem".val(""));
                         console.log(data);
                         console.log(dataString);
                     }
