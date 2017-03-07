@@ -39,11 +39,11 @@
                     */
                     if($team['bom_total'] == 0){
                         $meterVal = $team['spent_total'] / 1;
-                        echo "<script type=\"text/javascript\">console.log(\"".$meterVal."\")</script>";
+                        //echo "<script type=\"text/javascript\">console.log(\"".$meterVal."\")</script>";
                     }
                     else{
                         $meterVal = $team['spent_total']/$team['bom_total'];
-                        echo "<script type=\"text/javascript\">console.log(\"".$meterVal."\")</script>";
+                        //echo "<script type=\"text/javascript\">console.log(\"".$meterVal."\")</script>";
                     }
                     echo "<div class='panel panel-default teamPanel'>
                                 <a data-toggle='collapse' data-parent='#teamAccordion' style='color:black;' href='#collapseTeam".$team['id']."'>

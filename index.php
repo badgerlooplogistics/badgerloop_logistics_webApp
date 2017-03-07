@@ -312,7 +312,7 @@
                         $("#requestFormLocation").val("0");
                         $("#requestFormLink").val("");
                     } else {
-                        $("#successMessagePOR").show("fade");
+                        $("#failureMessagePOR").show("fade");
                         console.log(data);
                         console.log(dataString);
                     }
