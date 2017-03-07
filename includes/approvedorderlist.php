@@ -96,7 +96,7 @@
                             $system = "Virtual Reality";
                         }
                         */
-                        }
+                        
                         echo "<script type=\"text/javascript\">console.log(\"".$shipping_priority."\")</script>";
                         echo "<script type=\"text/javascript\">console.log(\"".$shippingLocation."\")</script>";
                         echo "<script type=\"text/javascript\">console.log(\"".$system."\")</script>";
