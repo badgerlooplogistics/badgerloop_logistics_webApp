@@ -266,7 +266,6 @@
     
 
     $("#requestFormSubmit").click(function() {
-        console.log(data);
         var item = $("#requestFormItem").val();
         var system = $("#requestFormSystem").val();
         var desc = $("#requestFormDesc").val();
@@ -304,13 +303,13 @@
                         console.log(data);
                         $("#successMessagePOR").show("fade");
                         $("#requestFormItem").val("");
-                        $("#requestFormSystem").val("");
+                        $("#requestFormSystem").val("0");
                         $("#requestFormDesc").val("");
                         $("#requestFormSupplier").val("");
                         $("#requestFormQuantity").val("");
                         $("#requestFormCost").val("");
                         $("#requestFormPriority").val("4");
-                        $("#requestFormLocation").val("0");
+                        $("#requestFormLocation").val("3");
                         $("#requestFormLink").val("");
                     } else {
                         $("#failureMessagePOR").show("fade");

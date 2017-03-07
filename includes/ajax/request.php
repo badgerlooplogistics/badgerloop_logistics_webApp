@@ -5,7 +5,7 @@ date_default_timezone_set('America/Chicago');
 
 $item = mysqli_real_escape_string($conn, $_POST['item']);
 $system = mysqli_real_escape_string($conn, $_POST['system']);
-echo "<script type=\"text/javascript\">console.log(\"".$system."\")</script>";
+//echo "<script type=\"text/javascript\">console.log(\"".$system."\")</script>";
 $desc = mysqli_real_escape_string($conn, $_POST['desc']);
 $supplier = mysqli_real_escape_string($conn, $_POST['supplier']);
 $quantity = mysqli_real_escape_string($conn, $_POST['quantity']);
@@ -32,7 +32,8 @@ $dateAdded = date('Y-m-d', time());
 $query = "INSERT INTO financial_package (item, system, item_disc, date_added, bom_supplier, est_quantity, est_individual_cost, shipping_priority, user_id,  team, status, link, shipping_location)
           VALUES ('".$item."','".$system."', '".$desc."', '".$dateAdded."', '".$supplier."', ".$quantity.", ".$cost.", ".$priority.", ".$userId.", ".$teamId.", 0, '".$link."', ".$location.")";
 
-echo "<script type=\"text/javascript\">console.log(\"".$query."\")</script>";
+//echo "<script type=\"text/javascript\">console.log(\"".$item."\")</script>";
+//echo "<script type=\"text/javascript\">console.log(\"".$system."\")</script>";
 
 
 mysqli_query($conn, $query);
