@@ -32,9 +32,6 @@ $dateAdded = date('Y-m-d', time());
 $query = "INSERT INTO financial_package (item, system, item_disc, date_added, bom_supplier, est_quantity, est_individual_cost, shipping_priority, user_id,  team, status, link, shipping_location)
           VALUES ('".$item."','".$system."', '".$desc."', '".$dateAdded."', '".$supplier."', ".$quantity.", ".$cost.", ".$priority.", ".$userId.", ".$teamId.", 0, '".$link."', ".$location.")";
 
-//echo "<script type=\"text/javascript\">console.log(\"".$item."\")</script>";
-//echo "<script type=\"text/javascript\">console.log(\"".$system."\")</script>";
-
 
 mysqli_query($conn, $query);
 /*

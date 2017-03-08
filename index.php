@@ -303,13 +303,13 @@
                         console.log(data);
                         $("#successMessagePOR").show("fade");
                         $("#requestFormItem").val("");
-                        $("#requestFormSystem").val("0");
+                        $("#requestFormSystem").val("");
                         $("#requestFormDesc").val("");
                         $("#requestFormSupplier").val("");
                         $("#requestFormQuantity").val("");
                         $("#requestFormCost").val("");
                         $("#requestFormPriority").val("4");
-                        $("#requestFormLocation").val("3");
+                        $("#requestFormLocation").val("0");
                         $("#requestFormLink").val("");
                     } else {
                         $("#failureMessagePOR").show("fade");
