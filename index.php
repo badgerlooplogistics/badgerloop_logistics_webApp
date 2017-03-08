@@ -371,8 +371,8 @@
                         $("#requestFormQuantity").val("");
                         $("#requestFormCost").val("");
                         $("#requestFormSupplierLink").val("");
-                        $("#requestFormPriority").val("4");
-                        $("#requestFormLocation").val("0");
+                        $("#requestFormPriority").val("");
+                        $("#requestFormLocation").val("");
 
                     } else {
                         $("#failureMessagePOTD").show("fade");
