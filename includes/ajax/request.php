@@ -34,13 +34,13 @@ $query = "INSERT INTO financial_package (item, system, item_disc, date_added, bo
 
 
 mysqli_query($conn, $query);
-/*
+
 if (mysqli_affected_rows($conn) > 0) {
     echo "success";
 } else {
     echo "fail";
 };
-*/
+
 
 /*
 $purchasers_name = "Elon Musk";
