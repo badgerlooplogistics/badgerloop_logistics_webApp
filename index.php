@@ -266,6 +266,7 @@
     
 
     $("#requestFormSubmit").click(function() {
+        console.log("correct button");
         var item = $("#requestFormItem").val();
         var system = $("#requestFormSystem").val();
         var desc = $("#requestFormDesc").val();
