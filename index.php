@@ -299,6 +299,8 @@
                 url: "includes/ajax/request.php",
                 data: dataString,
                 success: function (data) {
+                    console.log("right function");
+                    console.log(data);
                     if (data == "success") {
                         console.log(data);
                         $("#successMessagePOR").show("fade");
