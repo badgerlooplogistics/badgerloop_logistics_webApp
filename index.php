@@ -306,13 +306,13 @@
                         console.log(data);
                         $("#successMessagePOR").show("fade");
                         $("#requestFormItem").val("");
-                        $("#requestFormSystem").val("");
+                        $("#requestFormSystem").val("0");
                         $("#requestFormDesc").val("");
                         $("#requestFormSupplier").val("");
                         $("#requestFormQuantity").val("");
                         $("#requestFormCost").val("");
-                        $("#requestFormPriority").val("");
-                        $("#requestFormLocation").val("");
+                        $("#requestFormPriority").val("4");
+                        $("#requestFormLocation").val("3");
                         $("#requestFormLink").val("");
                     } else {
                         $("#failureMessagePOR").show("fade");
@@ -365,14 +365,14 @@
                     if (data == "success") {
                         $("#successMessagePOTD").show("fade");
                         $("#requestFormItem").val("");
-                        $("#requestFormSystem").val("");
+                        $("#requestFormSystem").val("0");
                         $("#requestFormDesc").val("");
                         $("#requestFormSupplier").val("");
                         $("#requestFormQuantity").val("");
                         $("#requestFormCost").val("");
                         $("#requestFormSupplierLink").val("");
-                        $("#requestFormPriority").val("");
-                        $("#requestFormLocation").val("");
+                        $("#requestFormPriority").val("4");
+                        $("#requestFormLocation").val("3");
 
                     } else {
                         $("#failureMessagePOTD").show("fade");
