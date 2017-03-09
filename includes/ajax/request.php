@@ -43,10 +43,8 @@ if (mysqli_affected_rows($conn) > 0) {
 
 
 
-$purchasers_name = "Elon Musk";
-$amount = "500 dollars";
 
-$message = "Hello! There is a new purchase request from ".$purchasers_name." for $".$cost; 
+$message = "There is a new purchase request";
 $room = "kkfisher3"; 
 $icon = ":moyai:"; 
 $username = "Georgebot";
