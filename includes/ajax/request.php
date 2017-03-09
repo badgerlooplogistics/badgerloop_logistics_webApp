@@ -42,7 +42,7 @@ if (mysqli_affected_rows($conn) > 0) {
 };
 
 
-/*
+
 $purchasers_name = "Elon Musk";
 $amount = "500 dollars";
 
